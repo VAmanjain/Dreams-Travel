@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+root {
+  --primaryColor: #023e8a;
+  --primarycolorLght: #0077b6;
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(216, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyColor: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 1%, 94%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.6rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+}
+.home .videoBg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.home .videoBg video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home .sectionText {
+  position: absolute;
+  height: 100%;
+  top: 30%;
+  bottom: 50%;
+  color: var(--whiteColor);
+  padding: 0 1.3rem;
+}
+.home .sectionText h1 {
+  font-size: var(--biggestFontSize);
+  font-weight: 900;
+}
+.home .sectionText p {
+  padding: 1rem 0;
+  font-size: var(--normalFontSize);
+  font-weight: 500;
+}
+.home .sectionText .btn {
+  gap: 0.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-size: var(--h3FontSize);
+}/*# sourceMappingURL=main.css.map */

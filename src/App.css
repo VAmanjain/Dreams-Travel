@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryColor:#023e8a;
+  --primarycolorLght:#0077b6;
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(216, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyColor: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 1%, 94%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.6rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+body {
+  background: var(--bgColor);
+  font-family: "Playfair Display SC", serif;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+p {
+  font-size: var(--smallFontSize);
+}
+
+html {
+  font-size: 90%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.icon {
+  font-size: var(--h2FontSize);
+}
+
+img, video {
+  width: 100%;
+  height: auto;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: var(--borderRadius);
+  color: var(--whiteColor);
+  padding: 0.8rem 1rem;
+  background: var(--primaryColor);
+}
+
+.btn:hover {
+  transition: 0.3s ease;
+}
+
+.btn .icon {
+  margin-left: 0.5rem;
+}
+
+.btn:hover {
+  color: var(--primaryColor);
+  background: var(--primaryColorLight);
+}
+
+.section {
+  padding: 4rem 0 2rem;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+::-moz-selection {
+  background: var(--primaryColorLight);
+  color: var(--primaryColor);
+}
+
+::selection {
+  background: var(--primaryColorLight);
+  color: var(--primaryColor);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--primaryColorLight);
+}
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background: var(--primaryColor);
+  border-radius: var(--borderRadius);
+}
+
+@media screen and (min-width: 840px) {
+  .section {
+    padding: 4rem 0 3rem;
+  }
+  .container {
+    width: 85%;
+    margin: auto;
+  }
+}/*# sourceMappingURL=App.css.map */

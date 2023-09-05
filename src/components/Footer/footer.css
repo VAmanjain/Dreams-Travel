@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryColor:hsl(214, 97%, 27%);
+  --primarycolorLght:hsl(201, 100%, 36%);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(216, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyColor: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 1%, 94%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.6rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.footer {
+  background-color: var(--primaryColor);
+  padding: 2rem 0;
+  color: var(--whiteColor);
+}
+.footer .secContaine {
+  gap: 1.5rem;
+  text-align: center;
+  align-items: flex-start;
+}
+.footer .secContaine .logoDiv {
+  padding-left: 2rem;
+}
+.footer .secContaine .logoDiv .footerLogo {
+  display: flex;
+  color: var(--whiteColor);
+  font-weight: 500;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+}
+.footer .secContaine .logoDiv .footerLogo .icon {
+  font-size: 25px;
+  color: var(--blackColor);
+}
+.footer .secContaine .socials {
+  gap: 0.5rem;
+  margin: auto;
+  justify-content: center;
+}
+.footer .secContaine .socials .icon {
+  font-size: 25px;
+  color: var(--whiteColor);
+  background-color: var(--primaryColor);
+  border-radius: 50%;
+  padding: 8px;
+}
+.footer .secContaine .socials .icon:hover {
+  color: var(--primaryColorLight);
+}
+.footer .secContaine .footerLinks {
+  display: grid;
+  row-gap: 0.2rem;
+}
+.footer .secContaine .footerLinks .linkTitle {
+  padding-bottom: 0.5rem;
+  color: var(--whiteColor);
+  font-weight: 700;
+}
+
+link:hover {
+  transform: translate(10px);
+}
+link:hover a {
+  color: var(--primarycolorLght);
+}
+
+a, .phone, .email {
+  color: var(--whiteColor);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 490px) {
+  .secContaine {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: start !important;
+    align-items: center;
+  }
+  .secContaine .footerLinks {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 740px) {
+  .secContaine {
+    padding: 2rem 0;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}/*# sourceMappingURL=footer.css.map */
