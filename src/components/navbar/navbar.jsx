@@ -159,7 +159,7 @@ const Navbar = () => {
       <button className="signUpBtn btn">
         <RouterLink to="/test" className="text-white">SignUP</RouterLink>
       </button>
-      <MenuIcon className="icon menuIcon" onClick={showNavBar} />
+      <MenuIcon className="icon menuIcon" onClick={showNavBar} style={{color:"white"}} />
     </div>
   );
 };
