@@ -10,7 +10,7 @@ root {
   --primarycolorLght:hsl(201, 100%, 36%);
   --bgColor: hsl(0, 0%, 100%);
   --formColor: hsl(216, 42%, 87%);
-  --whiteColor: hwb(0 100% 0%);
+  --whiteColor: hsl(0, 0%, 100%);
   --blackColor: hsl(0, 0%, 18%);
   --greyColor: hsl(0, 0%, 51%);
   --inputColor: hsl(330, 12%, 97%);
@@ -57,11 +57,6 @@ root {
   color: var(--whiteColor);
 }
 
-@media screen and (max-width: 480px) {
-  .navBar {
-    width: auto;
-  }
-}
 @media screen and (max-width: 767px) {
   .menu {
     position: absolute;

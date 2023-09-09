@@ -7,11 +7,11 @@ import Login from "./components/Login/login";
 import Footer from './components/Footer/footer';
 import Contact from './components/ContactUs/Contact'
 import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-// ..
-AOS.init();
-AOS.refresh();
-AOS.refreshHard();
+// import "aos/dist/aos.css"; // You can also use <link> for styles
+// // ..
+// AOS.init();
+// AOS.refresh();
+// AOS.refreshHard();
 
 
 
@@ -19,9 +19,7 @@ AOS.refreshHard();
 function App() {
   return (
    <div>
-    {/* <Navbar/>
-    
-    <Login/> */}
+
 
 <Router>
 

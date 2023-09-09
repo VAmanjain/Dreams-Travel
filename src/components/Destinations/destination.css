@@ -25,6 +25,9 @@
   --borderRadius: 3rem;
 }
 
+.destination {
+  width: 100%;
+}
 .destination .secContainer {
   width: 85%;
   margin: auto;

@@ -41,7 +41,7 @@ root {
   padding-bottom: 2rem;
 }
 .about .subscribe .secContainer .textDiv h4 {
-  font-size: 3rem;
+  font-size: var(--h2FontSize);
   color: var(--primaryColor);
   font-size: 700;
 }
@@ -59,9 +59,13 @@ root {
   border-radius: 10px;
 }
 
+@media screen and (max-wdth: 580px) {
+  .about .subscribe {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 480px) {
   .subscribe .secContainer img {
-    max-width: 75%;
     margin: auto;
   }
   .subscribe .secContainer .textDiv h4 {
