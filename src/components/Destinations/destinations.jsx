@@ -114,7 +114,7 @@ const Destinations = () => {
             <input type="text" placeholder="Date" />
           </div>
 
-          <button className="btn flex" data-aos="fade-up">
+          <button className="btnb flex" data-aos="fade-up">
             <BiSearchAlt className="icon" />
             Search
           </button>

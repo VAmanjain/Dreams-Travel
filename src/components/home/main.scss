@@ -33,10 +33,12 @@ root {
   width: 100%;
   top: 0;
 
+
   .videoBg {
     position: absolute;
     height: 100%;
     width: 100%;
+    overflow: hidden;
 
     video {
       height: 100%;
@@ -71,4 +73,16 @@ root {
       font-size: var(--h3FontSize);
     }
   }
+}
+
+@media screen and (max-width: 468px ) {
+
+  .home{
+    .sectionText{
+      h1{
+        font-size: 2rem;
+      }
+    }
+  }
+  
 }

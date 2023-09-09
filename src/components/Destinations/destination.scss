@@ -64,15 +64,23 @@
           }
         }
       }
-      .btn {
+      .btnb {
         gap: 1rem;
         margin: auto;
         width: 100%;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
+        border-radius: var(--borderRadius) !important;
+        color: var(--whiteColor) !important;
+        padding: 0.8rem 1rem !important;
+        background: var(--primaryColor)  !important;
       }
-      .btn:hover {
-        border: 2px dashed var(--primaryColor);
+      .btnb:hover {
+        background-color: var(--whiteColor) !important;
+        color: var(--primaryColor) !important;
+        box-shadow: 0 1px 2px rgb(110,110,110);
+        transition: 0.3s ease !important;
       }
   
       .secMenu {

@@ -30,7 +30,7 @@
 
 body{
     background: var(--bgColor);
-    font-family: 'Playfair Display SC', serif;
+    font-family: 'Playfair Display SC', serif !important;
 }
 
 .flex{
@@ -55,6 +55,7 @@ body{
   
   a {
     text-decoration: none;
+    color: var(--whiteColor) !important;
   }
   
   li {
@@ -71,26 +72,26 @@ body{
   }
 
   .btn {
-    border: none;
-    outline: none;
+    border: none !important;
+    outline: none !important;
     cursor: pointer;
-    border-radius: var(--borderRadius);
-    color: var(--whiteColor);
-    padding: 0.8rem 1rem;
-    background: var(--primaryColor);
+    border-radius: var(--borderRadius) !important;
+    color: var(--whiteColor) !important;
+    padding: 0.8rem 1rem !important;
+    background: var(--primaryColor)  !important;
   }
   .btn:hover {
-    transition: 0.3s ease;
+    transition: 0.3s ease !important;
   }
 
   
 .btn .icon {
-    margin-left: 0.5rem;
+    margin-left: 0.5rem !important;
   }
   
   .btn:hover {
-    color: var(--primaryColor);
-    background: var(--primaryColorLight);
+    color: var(--primaryColor) !important;
+    background: var(--primaryColorLight) !important;
   }
   
   .section {

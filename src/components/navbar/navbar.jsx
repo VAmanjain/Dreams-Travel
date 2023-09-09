@@ -1,84 +1,167 @@
 import React, { useState } from "react";
-import './navbar.css';
+import "./navbar.css";
 import ConnectingAirportsIcon from "@mui/icons-material/ConnectingAirports";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
+import {
+  NavLink as RouterLink,
+  useLocation,
+  useNavigate,
+} from "react-router-dom";
 
-
+import { Link as ScrollLink } from "react-scroll";
+import * as Scroll from "react-scroll";
 
 const Navbar = () => {
+  const path = useLocation().pathname;
+  const location = path.split("/")[1];
+  const navigate = useNavigate();
+  const scroller = Scroll.scroller;
+
+  const goToPageAndScroll = async (selector) => {
+    await navigate("/");
+    await scroller.scrollTo(selector, {
+      duration: 500,
+      smooth: true,
+      offset: -75,
+      spy: true,
+    });
+  };
+
   // state to track and update navbar
-  const [navBar,setNavBar]=useState("menu");
-  
+  const [navBar, setNavBar] = useState("menu");
+
   //Function to show navBar
-  
-  const showNavBar = () =>{
-    setNavBar(" menu showNavbar");
-  }
+
+  const showNavBar = () => {
+    setNavBar(" menu showNavbar showNavBarC");
+  };
   //Function to remove navbar
-  const removeNavBar = () =>{
+  const removeNavBar = () => {
     setNavBar(" menu ");
-  }
+  };
   return (
-  //   <div className="navBar ">
-  //     <div className="logoDiv">
-  //       <ConnectingAirportsIcon className="icon" />
-  //       <span>Dreams-Travel</span>
-  //     </div>
-
-  //     <div className={navBar}>
-  //       <ul className=" ">
-  //         <li>
-  //           <a href="/">Home</a>
-  //         </li>
-  //         <li>
-  //           <a href="/">About</a>
-  //         </li>
-  //         <li>
-  //           <a href="/">Destinations</a>
-  //         </li>
-  //         <li>
-  //           <a href="/">Contact</a>
-  //         </li>
-  //       </ul>
-  //     </div>
-  //     <CloseIcon className="icon closeIcon" onClick={removeNavBar} />
-
-  //     <div className="signUp" >
-  //       <button className="btn" >
-  //         <a href="#">SignUp</a>
-  //       </button>
-  //     </div>
-  //     <MenuIcon className="icon menuIcon" onClick={showNavBar} />
-
-  //   </div>
-  // );
-  <div className="navBar ">
+    <div className="navBar ">
       <div className="logoDiv">
-        <ConnectingAirportsIcon className="icon"/>
-        <span>Drems-Travel</span>
+        <ConnectingAirportsIcon className="icon" />
+
+        {location !== "test" ? (
+          <span>
+            {" "}
+            <ScrollLink
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-75}
+              duration={500}
+              className=" text-[1.5rem] text-white "
+            >
+              Dreams Travel
+            </ScrollLink>
+          </span>
+        ) : (
+          <span onClick={() => goToPageAndScroll("home")}>Drems-Travel</span>
+        )}
       </div>
 
       <div className={navBar}>
         <ul>
-          <li className="navList">
-          Home
-            
+          {location == "test"? (
+             <>
+             <li className="navList" onClick={() => goToPageAndScroll("home")}>
+               Home
+             </li>
+             <li
+               className="navList"
+               onClick={() => goToPageAndScroll("destination")}
+             >
+               Destinations
+             </li>
+             <li
+               className="navList"
+               onClick={() => goToPageAndScroll("about")}
+             >
+               About
+             </li>
+             <li className="navList">
+             <RouterLink to="/contact" className="text-white">contact</RouterLink>
+             </li>
+           </>
+          ): 
+          location == "contact"? (
+            <>
+            <li className="navList" onClick={() => goToPageAndScroll("home")}>
+              Home
             </li>
-          <li className="navList">Destinations</li>
-          <li className="navList">About</li>
-          <li className="navList">Contact</li>
+            <li
+              className="navList"
+              onClick={() => goToPageAndScroll("destination")}
+            >
+              Destinations
+            </li>
+            <li
+              className="navList"
+              onClick={() => goToPageAndScroll("about")}
+            >
+              About
+            </li>
+            <li className="navList">
+            <RouterLink to="/contact" className="text-white">contact</RouterLink>
+            </li>
+          </>
+          ) : (
+            <>
+              <li className="navList">
+                <ScrollLink
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={-75}
+                  duration={500}
+                >
+                  Home
+                </ScrollLink>
+              </li>
+              <li className="navList">
+                <ScrollLink
+                  to="destination"
+                  spy={true}
+                  smooth={true}
+                  offset={-75}
+                  duration={500}
+                >
+                  Destinations
+                </ScrollLink>
+              </li>
+              <li className="navList">
+                <ScrollLink
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-75}
+                  duration={500}
+                >
+                  About
+                </ScrollLink>
+              </li>
+              <li className="navList">
+              <RouterLink to="/contact" className="text-white">Contact</RouterLink>
+              </li>
+            </>
+          )}
         </ul>
 
         {/* Icons to remove Navbar */}
 
-        <CloseIcon className='icon closeIcon' onClick={removeNavBar} />
+        <CloseIcon className="icon closeIcon" onClick={removeNavBar} />
       </div>
-      <button className="signUpBtn btn">Sign Up </button>
-      <MenuIcon className='icon menuIcon' onClick={showNavBar}/>
-
-    </div>);
+      <button className="signUpBtn btn">
+        <RouterLink to="/test" className="text-white">SignUP</RouterLink>
+      </button>
+      <MenuIcon className="icon menuIcon" onClick={showNavBar} />
+    </div>
+  );
 };
 
 export default Navbar;

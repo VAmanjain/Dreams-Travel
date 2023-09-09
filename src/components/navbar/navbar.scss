@@ -12,7 +12,7 @@ root{
     --primarycolorLght:hsl(201, 100%, 36%);
     --bgColor: hsl(0, 0%, 100%);
     --formColor: hsl(216, 42%, 87%);
-    --whiteColor: hsl(0, 0%, 100%);
+    --whiteColor: hwb(0 100% 0%);
     --blackColor: hsl(0, 0%, 18%);
     --greyColor: hsl(0, 0%, 51%);
     --inputColor: hsl(330, 12%, 97%);
@@ -36,7 +36,7 @@ root{
     align-items: center;
     width: 100%;
     height: 5rem;
-    background:hsla(214, 97%, 27%, 0.694) ;
+    background:rgba(2, 60, 136, 0.694) ;
     backdrop-filter: blur(5px);
     border-bottom: solid 2px rgb(157, 216, 239);
     z-index: 1000;
@@ -64,6 +64,13 @@ root{
         }
     }
 }
+
+@media screen and (max-width:480px) {
+  .navBar{
+    width: auto;
+  }
+}
+
 @media screen and (max-width: 767px) {
     .menu {
       position: absolute;
@@ -72,24 +79,30 @@ root{
       right: 50%;
       left: 50%;
       transform: translate(-50%);
-      background: rgba(255, 255, 255, 0.94);
+      background-color: hsla(214, 97%, 27%, 0.694) ;
       padding: 2rem;
       border-radius: 10px;
       transition: 0.8s ease-in-out;
       backdrop-filter: blur(5px);
       box-shadow: 0px 2px 3px 4px rgba(236, 213, 213, 0.516);
 
-      li {
-        font-size: var(--h3FontSize);
-        font-weight: 500;
-        padding: 1rem 0;
-        text-align: center;
-        cursor: pointer;
-        &:hover {
-          color: var(--primaryColor);
-          border-bottom: 1.5px solid var(--primaryColorLight);
-        }
-      }
+ul{
+  display: flex;
+  flex-direction: column;
+  
+  li {
+    
+    font-size: var(--h3FontSize);
+    font-weight: 500;
+    padding: 1rem 0;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      color: var(--primaryColor);
+      border-bottom: 1.5px solid var(--primaryColorLight);
+    }
+  }
+}
     }
   }
 
@@ -103,14 +116,17 @@ root{
 
   .closeIcon {
     position: absolute;
-    bottom: -15px;
+    bottom: -10px;
     right: 50%;
     left: 50%;
-    color: var(--blackColor);
+    color: var(--whiteColor);
     transform: translate(-50%);
+    background-color: hsla(214, 97%, 27%, 0.694);
+    border-radius: 50%;
   }
 
   .showNavbar {
+    
     top: 8rem;
   }
 
