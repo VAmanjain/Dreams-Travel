@@ -37,7 +37,7 @@ root {
   width: 100%;
   overflow: hidden;
 }
-.home .videoBg video {
+.home .videoBg img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;

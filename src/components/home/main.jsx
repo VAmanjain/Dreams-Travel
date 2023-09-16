@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './main.css'
-import Video from "../../Assest/video2.mp4";
+import Image from '../../Assest/back3.jpg'
 
 const main = () => {
+
   return (
     <div className="home" name="home">
       <div className="videoBg " >
-        <video src={Video} autoPlay loop muted ></video>
+       <img src={Image} alt="" />
       </div>
 
       <div className="sectionText"  data-aos="fade-right"

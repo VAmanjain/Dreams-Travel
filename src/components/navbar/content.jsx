@@ -1,4 +1,4 @@
-import Home from "../home/main"
+import Home from "../home/Main"
 import Destinations from "../Destinations/destinations"
 import Questions from "../Questions/Questions"
 import About from "../AboutUs/about"
