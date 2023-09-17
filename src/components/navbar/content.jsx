@@ -4,10 +4,11 @@ import About from "../AboutUs/about";
 import Footer from "../Footer/footer";
 import Main from "../home/Main";
 
+
 const Content = () => {
   return (
     <div id="mainContent">
-      <Main/>
+<Main/>
       <Destinations />
       <Questions />
       <About />
