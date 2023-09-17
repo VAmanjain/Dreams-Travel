@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import './main.css'
 import Image from '../../Assest/back3.jpg'
 
-const main = () => {
+const Main = () => {
 
   return (
     <div className="home" name="home">
@@ -28,4 +28,4 @@ Let's travel
   );
 };
 
-export default main;
+export default Main;
