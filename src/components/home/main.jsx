@@ -10,10 +10,7 @@ const Main = () => {
        <img src={Image} alt="" />
       </div>
 
-      <div className="sectionText"  data-aos="fade-right"
-    data-aos-offset="200"
-    data-aos-delay="200"
-    data-aos-duration="1000">
+      <div className="sectionText">
         <h1>Enjoy you Dream's vactions with Us !!</h1>
         <p>
           Complete your travel dreams with your partner , freinds , family life is short for travel.

@@ -89,32 +89,32 @@ const Destinations = () => {
     <div name='destination' className="destination section conatiner">
       <div className="secContainer">
         <div className="secTitle">
-          <span className="redText" data-aos="fade-up">
+          <span className="redText" >
             EXPLORE NOW
           </span>
-          <h3 data-aos="fade-up">Find Your Dream Destination</h3>
-          <p data-aos="fade-up">
+          <h3 >Find Your Dream Destination</h3>
+          <p >
             Fill in fields below best spot for your next tour
           </p>
         </div>
 
         <div className="searchField grid ">
-          <div className="inputField flex" data-aos="fade-up">
+          <div className="inputField flex" >
             <MdLocationPin className="icon" />
             <input type="text" placeholder="Location" />
           </div>
 
-          <div className="inputField flex" data-aos="fade-up">
+          <div className="inputField flex" >
             <BsFillCreditCardFill className="icon" />
             <input type="text" placeholder="Budget" />
           </div>
 
-          <div className="inputField flex" data-aos="fade-up">
+          <div className="inputField flex" >
             <BsFillCalendarDateFill className="icon" />
             <input type="text" placeholder="Date" />
           </div>
 
-          <button className="btnb flex" data-aos="fade-up">
+          <button className="btnb flex" >
             <BiSearchAlt className="icon" />
             Search
           </button>
@@ -122,14 +122,14 @@ const Destinations = () => {
 
         <div className="secMenu">
           <ul className="flex">
-            <li className="active" data-aos="fade-up">
+            <li className="active" >
               All
             </li>
-            <li data-aos="fade-up" >Recommened</li>
-            <li data-aos="fade-up">Beach</li>
-            <li data-aos="fade-up">Park</li>
-            <li data-aos="fade-up">Nature</li>
-            <li data-aos="fade-up">Mountain</li>
+            <li  >Recommened</li>
+            <li >Beach</li>
+            <li >Park</li>
+            <li >Nature</li>
+            <li >Mountain</li>
           </ul>
         </div>
 
@@ -139,9 +139,9 @@ const Destinations = () => {
               <div
                 className="singleDestination"
                 key={destination.id}
-                data-aos="fade-up"
+                
               >
-                <div className="imgDiv" data-aos="fade-up">
+                <div className="imgDiv" >
                   <img src={destination.img} alt="" />
 
                   <div className="descInfo flex">
