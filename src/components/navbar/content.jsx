@@ -2,13 +2,12 @@ import Destinations from "../Destinations/destinations";
 import Questions from "../Questions/Questions";
 import About from "../AboutUs/about";
 import Footer from "../Footer/footer";
-import Main from "../home/Main";
-
+import Maint from "../home/Maint";
 
 const Content = () => {
   return (
     <div id="mainContent">
-<Main/>
+      <Maint/>
       <Destinations />
       <Questions />
       <About />
