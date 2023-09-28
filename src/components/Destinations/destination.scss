@@ -28,8 +28,18 @@
       --borderRadius: 3rem;
 }
 
+
 .destination {
   width: 100%;
+  .hero{
+    h1{
+      font-size: var(--biggestFontSize) !important;
+      color: var(--primaryColor);
+    }
+    .redText{
+      margin-top: 1rem;
+    }
+  }
     .secContainer {
     width: 85%;
     margin: auto;

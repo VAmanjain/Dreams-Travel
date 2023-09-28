@@ -28,6 +28,13 @@
 .destination {
   width: 100%;
 }
+.destination .hero h1 {
+  font-size: var(--biggestFontSize) !important;
+  color: var(--primaryColor);
+}
+.destination .hero .redText {
+  margin-top: 1rem;
+}
 .destination .secContainer {
   width: 85%;
   margin: auto;

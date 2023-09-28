@@ -67,49 +67,53 @@ const Navbar = () => {
 
       <div className={navBar}>
         <ul>
-          {location == "test"? (
-             <>
-             <li className="navList" onClick={() => goToPageAndScroll("home")}>
-               Home
-             </li>
-             <li
-               className="navList"
-               onClick={() => goToPageAndScroll("destination")}
-             >
-               Destinations
-             </li>
-             <li
-               className="navList"
-               onClick={() => goToPageAndScroll("about")}
-             >
-               About
-             </li>
-             <li className="navList">
-             <RouterLink to="/contact" className="text-white">contact</RouterLink>
-             </li>
-           </>
-          ): 
-          location == "contact"? (
+          {location == "test" ? (
             <>
-            <li className="navList" onClick={() => goToPageAndScroll("home")}>
-              Home
-            </li>
-            <li
-              className="navList"
-              onClick={() => goToPageAndScroll("destination")}
-            >
-              Destinations
-            </li>
-            <li
-              className="navList"
-              onClick={() => goToPageAndScroll("about")}
-            >
-              About
-            </li>
-            <li className="navList">
-            <RouterLink to="/contact" className="text-white">contact</RouterLink>
-            </li>
-          </>
+              <li className="navList" onClick={() => goToPageAndScroll("home")}>
+                Home
+              </li>
+              <li
+                className="navList"
+                onClick={() => goToPageAndScroll("destination")}
+              >
+                Destinations
+              </li>
+              <li
+                className="navList"
+                onClick={() => goToPageAndScroll("about")}
+              >
+                About
+              </li>
+              <li className="navList">
+                <RouterLink to="/contact" className="text-white">
+                  contact
+                </RouterLink>
+              </li>
+            </>
+          ) : location == "contact" ? (
+            <>
+              <li className="navList" onClick={() => goToPageAndScroll("home")}>
+                Home
+              </li>
+              <li
+                className="navList"
+                onClick={() => goToPageAndScroll("destination")}
+              >
+                Destinations
+              </li>
+              <li
+                className="navList"
+                onClick={() => goToPageAndScroll("about")}
+              >
+                About
+              </li>
+              <li className="navList">
+                <RouterLink to="/contact" className="text-white">
+                  contact
+                </RouterLink>
+              </li>
+             
+            </>
           ) : (
             <>
               <li className="navList">
@@ -146,8 +150,11 @@ const Navbar = () => {
                 </ScrollLink>
               </li>
               <li className="navList">
-              <RouterLink to="/contact" className="text-white">Contact</RouterLink>
+                <RouterLink to="/contact" className="text-white">
+                  Contact
+                </RouterLink>
               </li>
+             
             </>
           )}
         </ul>
@@ -157,9 +164,15 @@ const Navbar = () => {
         <CloseIcon className="icon closeIcon" onClick={removeNavBar} />
       </div>
       <button className="signUpBtn btn">
-        <RouterLink to="/test" className="text-white">SignUP</RouterLink>
+        <RouterLink to="/test" className="text-white">
+          SignUP
+        </RouterLink>
       </button>
-      <MenuIcon className="icon menuIcon" onClick={showNavBar} style={{color:"white"}} />
+      <MenuIcon
+        className="icon menuIcon"
+        onClick={showNavBar}
+        style={{ color: "white" }}
+      />
     </div>
   );
 };

@@ -1,7 +1,14 @@
 import React, { useEffect } from "react";
-import './destination.css'
+import "./destination.css";
 
+import {
+  NavLink as RouterLink,
+  useLocation,
+  useNavigate,
+} from "react-router-dom";
 
+import { Link as ScrollLink } from "react-scroll";
+import * as Scroll from "react-scroll";
 
 //Import icon
 
@@ -14,13 +21,14 @@ import { TiLocation } from "react-icons/ti";
 //Import Photos
 
 import Image1 from "../../Assest/Image1.jpg";
-import Image2 from "../../Assest/Image2.jpg";
+import Image2 from "../../Assest/Ausetralia.jpg";
 import Image3 from "../../Assest/Image3.jpg";
 import Image4 from "../../Assest/Image4.jpg";
-import Image5 from "../../Assest/Image5.jpg";
+import Image5 from "../../Assest/london.jpg";
 import Image6 from "../../Assest/Image6.jpg";
-import Image7 from "../../Assest/Image7.jpg";
-import Image8 from "../../Assest/Image8.jpg";
+import Image7 from "../../Assest/India.jpg";
+import Image8 from "../../Assest/Dreams.jpg";
+import Data from "./destinationData";
 
 //lets create an array that is gonna contain all destination data and we loop through
 
@@ -36,7 +44,7 @@ const destinations = [
     id: 2,
     img: Image2,
     name: "Santorini",
-    location: "Greece",
+    location: "Austeralia",
     rating: 4.9,
   },
   {
@@ -57,7 +65,7 @@ const destinations = [
     id: 5,
     img: Image5,
     name: "San Quirico d'Orcia",
-    location: "Italy",
+    location: "London",
     rating: 4.6,
   },
   {
@@ -71,90 +79,69 @@ const destinations = [
     id: 7,
     img: Image7,
     name: "Yoho National Park, Field",
-    location: "Canada",
+    location: "India",
     rating: 4.3,
   },
   {
     id: 8,
     img: Image8,
-    name: "Giau Pass",
-    location: "Italy",
-    rating: 4.6,
+    location: "Your Dreams Travel",
+    rating: "Plan",
   },
 ];
 
-const Destinations = () => {
- 
+const Destinations = ({ destination, index, destinationData }) => {
+  const path = useLocation().pathname;
+  const location = path.split("/")[1];
+  const navigate = useNavigate();
+  const scroller = Scroll.scroller;
+
+  const goToPageAndScroll = async (selector) => {
+    await navigate("/");
+    await scroller.scrollTo(selector, {
+      duration: 500,
+      smooth: true,
+      offset: -75,
+      spy: true,
+    });
+  };
   return (
-    <div name='destination' className="destination section conatiner">
+    <div name="destination" className="destination section conatiner">
       <div className="secContainer">
         <div className="secTitle">
-          <span className="redText" >
-            EXPLORE NOW
-          </span>
-          <h3 >Find Your Dream Destination</h3>
-          <p >
-            Fill in fields below best spot for your next tour
-          </p>
+          <span className="redText">EXPLORE NOW</span>
+          <h3>Find Your Dream Destination</h3>
+          <p>Fill in fields below best spot for your next tour</p>
         </div>
-
-        <div className="searchField grid ">
-          <div className="inputField flex" >
-            <MdLocationPin className="icon" />
-            <input type="text" placeholder="Location" />
-          </div>
-
-          <div className="inputField flex" >
-            <BsFillCreditCardFill className="icon" />
-            <input type="text" placeholder="Budget" />
-          </div>
-
-          <div className="inputField flex" >
-            <BsFillCalendarDateFill className="icon" />
-            <input type="text" placeholder="Date" />
-          </div>
-
-          <button className="btnb flex" >
-            <BiSearchAlt className="icon" />
-            Search
-          </button>
-        </div>
-
-        <div className="secMenu">
-          <ul className="flex">
-            <li className="active" >
-              All
-            </li>
-            <li  >Recommened</li>
-            <li >Beach</li>
-            <li >Park</li>
-            <li >Nature</li>
-            <li >Mountain</li>
-          </ul>
-        </div>
-
         <div className="destinationContainer grid">
           {destinations.map((destination) => {
             return (
-              <div
-                className="singleDestination"
-                key={destination.id}
-                
-              >
-                <div className="imgDiv" >
-                  <img src={destination.img} alt="" />
-
-                  <div className="descInfo flex">
-                    <div className="text">
-                      <span className="name">{destination.name}</span>
-                      <p className="flex">
-                        <TiLocation className="icon" />
-                        {destination.location}
-                      </p>
+              <div key={destination.id}>
+                <>
+                  <RouterLink
+                    to={`/dest/${destination.id}`}
+                    key={destination.id}
+                    className="text-white"
+                  >
+                    <div className="singleDestination">
+                      <div className="imgDiv">
+                        <img src={destination.img} alt="" />
+                        <div className="descInfo flex">
+                          <div className="text">
+                            <p
+                              className="flex"
+                              onClick={() => goToPageAndScroll("gallery")}
+                            >
+                              <TiLocation className="icon" />
+                              {destination.location}
+                            </p>
+                          </div>
+                          <span className="rating">{destination.rating}</span>
+                        </div>
+                      </div>
                     </div>
-                    <span className="rating">{destination.rating}</span>
-                  </div>
-                </div>
+                  </RouterLink>
+                </>
               </div>
             );
           })}
