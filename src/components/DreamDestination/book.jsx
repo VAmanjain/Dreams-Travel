@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import 'mdb-react-ui-kit';
 import {
   MDBInput,
@@ -34,6 +34,9 @@ const Book = () => {
     });
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div name="book" className="book ">
      

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { MDBInput, MDBCheckbox, MDBBtn, MDBValidation, MDBValidationItem , MDBTextArea} from 'mdb-react-ui-kit';
 import './contact.css'
 import Image from '../../Assest/contact.jpg'
@@ -28,6 +28,9 @@ const Contact = () => {
       });
     };
 
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
 
   return (
     <div className='contact '>

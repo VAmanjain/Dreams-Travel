@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import * as Scroll from "react-scroll";
 import Image from '../../Assest/form1.jpg'
 import {
@@ -50,6 +50,10 @@ function App() {
 
     setJustifyActive(value);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className=' for '>

@@ -29,11 +29,13 @@ const Travel = () => {
         <div className="secTitle">
           Your Dream Travel
         </div>
+        <RouterLink to="/trip" className="text-white">
         <div className="singleDestination">
           <div className="imgDiv">
             <img src={Image} alt="" />
             <div className="descInfo flex">
               <div className="text">
+                <h6>Want to travel by you dream Destination??</h6>
                 <h1
                   className="flex"
                   onClick={() => goToPageAndScroll("home")}
@@ -42,6 +44,7 @@ const Travel = () => {
             </div>
           </div>
         </div>
+                </RouterLink>
       </div>
     </div>
   );

@@ -8,6 +8,7 @@ import Login from "./components/Login/login";
 import Contact from "./components/ContactUs/Contact";
 import Gallery from "./components/Destinations/gallery";
 import Book from "./components/DreamDestination/book";
+import Trip from "./components/DreamDestination/trip";
 
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
           <Route path="/test" element={<Login />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/dest/:id" element={<Gallery />} />
-          <Route path="/book" element={<Book/>} />
+          <Route path="/book" element={<Book />} />
+          <Route path="/trip" element={<Trip/>} />
         </Routes>
       </Router>
     </div>

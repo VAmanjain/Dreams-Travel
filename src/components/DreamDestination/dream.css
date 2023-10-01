@@ -25,6 +25,11 @@ root {
   --borderRadius: 3rem;
 }
 
+.container {
+  margin-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .book {
   background: linear-gradient(45deg, #bee9e8, #62b6cb, #cae9ff, #5fa8d3);
   width: 100%;
@@ -126,9 +131,8 @@ root {
   padding-bottom: 0.3rem;
   font-weight: var(--h3FontSize);
 }
-.singleDestination .descInfo .flex,
-.singleDestination .descInfo .icon {
-  font-size: var(--normalFontSize);
+.singleDestination .descInfo .text {
+  opacity: 0.8;
 }
 .singleDestination .rating {
   padding: 8px 1rem;
@@ -138,4 +142,59 @@ root {
   font-size: var(--h3FontSize);
   font-weight: 600;
   color: var(--whiteColor);
+}
+
+.trip {
+  background: linear-gradient(45deg, #bee9e8, #62b6cb, #cae9ff, #5fa8d3);
+  width: 100%;
+  height: 180vh;
+}
+.trip .imgBg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.trip .imgBg img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.trip .trip-box {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding-top: 5rem;
+}
+.trip .trip-box .trip-form {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 5%);
+  background-color: hsla(214, 97%, 27%, 0.694);
+  color: var(--whiteColor);
+  border-radius: 20px;
+  box-shadow: 0px 2px 3px 4px rgba(236, 213, 213, 0.516);
+  padding: 2rem;
+  border-radius: 10px;
+  color: var(--whiteColor);
+  background-color: hsla(214, 97%, 27%, 0.694) !important;
+}
+
+@media screen and (max-width: 480px) {
+  .trip {
+    width: 100%;
+    height: 220vh;
+  }
+  .trip span {
+    font-size: var(--smallFontSize);
+  }
+}
+@media screen and (max-width: 720px) {
+  .trip {
+    width: 100%;
+    height: 200vh;
+  }
+  .trip span {
+    font-size: var(--h3FontSize);
+  }
 }/*# sourceMappingURL=dream.css.map */
