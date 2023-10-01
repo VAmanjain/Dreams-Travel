@@ -25,8 +25,12 @@ root {
   --borderRadius: 3rem;
 }
 
+textarea {
+  padding-right: 2rem;
+}
+
 .questions {
-  margin: 5rem;
+  margin: 2rem;
   padding-bottom: 5rem;
 }
 .questions .Heading {
@@ -38,7 +42,7 @@ root {
   font-weight: 700;
 }
 .questions .accordion {
-  width: 95%;
+  width: 100%;
   height: auto;
   margin: auto;
 }

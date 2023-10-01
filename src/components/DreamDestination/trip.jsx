@@ -30,7 +30,8 @@ const Trip = () => {
     <div className='trip ' name='trip'>
         <div className='trip-box '  >
 
-
+<form method="POST"
+        action="https://getform.io/f/3a91ce58-1c8a-4b95-9309-7c281be8e257">
           <MDBValidation noValidate id='form' className='text-center mx-auto  trip-form  container' style={{ width: '100%'  }}>
       <h2>Plan You Dream Trip </h2>
       <span style={{paddingBottom:"1.5rem"}}>Fill the form and our team will contact you for furthuer process</span>
@@ -174,6 +175,7 @@ const Trip = () => {
         Send
       </MDBBtn>
     </MDBValidation>
+    </form>
         </div>
     </div>
   )

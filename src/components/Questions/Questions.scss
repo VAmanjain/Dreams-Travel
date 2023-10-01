@@ -26,10 +26,12 @@ root {
   --smallestFontSize: 0.75rem;
   --borderRadius: 3rem;
 }
-
+textarea{
+  padding-right:2rem ;
+}
 .questions{
 
-  margin:5rem ;
+  margin:2rem ;
   padding-bottom: 5rem;
   .Heading{
     padding-bottom: 5rem;
@@ -41,7 +43,7 @@ root {
 
   }
   .accordion{
-    width: 95%;
+    width: 100%;
     height: auto;
     margin: auto;
 

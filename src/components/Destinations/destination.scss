@@ -38,17 +38,23 @@
     }
     .redText{
       margin-top: 1rem;
+
     }
+    
   }
     .secContainer {
     width: 85%;
     margin: auto;
       display: grid;
       gap: 2rem;
-      .redText {
-        color: var(--primaryColor);
-        font: var(--smallFontSize);
-        font-weight: 500;
+      .secTitle{
+
+        .redText {
+          color: var(--primaryColor);
+          font: var(--smallFontSize);
+          font-weight: 500;
+        }
+       
       }
   
       h3 {

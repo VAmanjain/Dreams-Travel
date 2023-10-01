@@ -41,7 +41,7 @@
   display: grid;
   gap: 2rem;
 }
-.destination .secContainer .redText {
+.destination .secContainer .secTitle .redText {
   color: var(--primaryColor);
   font: var(--smallFontSize);
   font-weight: 500;

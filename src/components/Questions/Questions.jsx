@@ -3,7 +3,6 @@ import "./Questions.css";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
 
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import { red } from "@mui/material/colors";
@@ -21,10 +20,7 @@ export default function Questions() {
       </div>
       <div className="  secContainer grid container">
         <div className="accordion grid ">
-          <div className="secContent"  data-aos="fade-right"
-    data-aos-offset="200"
-    data-aos-delay="250"
-    data-aos-duration="1000">
+          <div className="secContent">
             <Accordion  >
               <div className="secHeading">
                 <AccordionSummary
@@ -47,10 +43,7 @@ export default function Questions() {
               </div>
             </Accordion>
           </div>
-          <div className="secContent"  data-aos="fade-right"
-    data-aos-offset="200"
-    data-aos-delay="500"
-    data-aos-duration="1000">
+          <div className="secContent">
             <Accordion style={{ background: red }}>
               <div className="secHeading">
                 <AccordionSummary
@@ -72,10 +65,7 @@ export default function Questions() {
               </div>
             </Accordion>
           </div>
-          <div className="secContent"  data-aos="fade-right"
-    data-aos-offset="200"
-    data-aos-delay="750"
-    data-aos-duration="1000">
+          <div className="secContent">
             <Accordion >
               <div className="secHeading">
                 <AccordionSummary
@@ -96,10 +86,7 @@ export default function Questions() {
               </div>
             </Accordion>
           </div>
-          <div className="secContent"  data-aos="fade-right"
-    data-aos-offset="200"
-    data-aos-delay="1000"
-    data-aos-duration="1000">
+          <div className="secContent">
             <Accordion>
               <div className="secHeading">
                 <AccordionSummary
@@ -139,13 +126,13 @@ export default function Questions() {
             <input
               type="email"
               placeholder="Enter email address"
-              data-aos="fade-up"
+             
             />
             <textarea
               placeholder="Enter your question here"
-              data-aos="fade-up"
+              className="px-3"
             ></textarea>
-            <button className="btn" data-aos="fade-up"  onClick={() => review() } >
+            <button className="btn" onClick={() => review() } >
               Submit Inquiery
             </button>
           </div>

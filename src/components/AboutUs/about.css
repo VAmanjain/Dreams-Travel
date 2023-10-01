@@ -32,6 +32,9 @@ root {
   color: var(--primaryColor);
   padding-bottom: 2rem;
 }
+.about img {
+  border-radius: 40px;
+}
 .about .subscribe {
   width: 85%;
   height: auto;
@@ -41,7 +44,8 @@ root {
   padding-bottom: 2rem;
 }
 .about .subscribe .secContainer .textDiv h4 {
-  font-size: var(--h2FontSize);
+  text-align: center;
+  font-size: var(--biggestFontSize);
   color: var(--primaryColor);
   font-size: 700;
 }
@@ -50,18 +54,23 @@ root {
   color: var(--primarycolorLght);
 }
 .about .subscribe .secContainer .textDiv p {
-  padding: 1rem 0;
+  padding: 0;
   font-size: var(--normalFontSize);
   color: var(--blackColor);
 }
+.about .subscribe .secContainer .textDiv .Imge {
+  border-radius: 50% !important;
+}
 .about .subscribe .secContainer .textDiv .Imge img {
-  width: 40px;
-  border-radius: 10px;
+  border-radius: 40px;
 }
 
 @media screen and (max-wdth: 580px) {
   .about .subscribe {
     width: 100%;
+  }
+  .about .subscribe .secContainer .textDiv h4 {
+    font-size: var(--h3FontSize) !important;
   }
 }
 @media screen and (min-width: 480px) {
