@@ -153,6 +153,49 @@
   font-weight: 600;
   color: var(--whiteColor);
 }
+.destination .head h1 {
+  color: var(--primaryColor);
+  font-size: var(--biggestFontSize);
+  font-weight: 900;
+}
+.destination .head h2 {
+  font-size: var(--h1FontSize);
+  color: var(--blackColor);
+  padding-top: 1rem;
+}
+.destination .head h4 {
+  font-size: var(--h3FontSize);
+}
+.destination .head span {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.destination .head .highlight {
+  font-size: var(--smallFontSize);
+  justify-content: center;
+  line-height: 1.2rem;
+}
+.destination .head .highlight b {
+  color: var(--blackColor);
+}
+.destination .par {
+  font-size: var(--smallFontSize);
+  justify-content: center;
+  line-height: 1.2rem;
+  margin-bottom: 3rem;
+}
+.destination .par b {
+  color: var(--blackColor);
+}
+.destination .redText {
+  padding-bottom: 3rem;
+}
+.destination .ticket {
+  padding-top: 2rem;
+  background-color: var(--primaryColor);
+  padding: 1.2rem;
+  border-radius: 40px;
+}
 
 @media screen and (min-width: 480px) {
   .destination .secContainer .searchField {

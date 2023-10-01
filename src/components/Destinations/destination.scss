@@ -179,7 +179,56 @@
         }
       }
     }
+
+  .head {
+
+   h1{
+    color: var(--primaryColor);
+    font-size: var(--biggestFontSize);
+    font-weight: 900;
+   }
+h2{
+  font-size: var(--h1FontSize);
+  color: var(--blackColor);
+  padding-top: 1rem;
+}
+h4{
+  font-size: var(--h3FontSize);
+}
+   span{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+   }
+   .highlight{
+    b{
+      color: var(--blackColor);
+    }
+    font-size: var(--smallFontSize);
+    justify-content: center;
+    line-height: 1.2rem;
+   }
+   }
+   .par{
+    b{
+      color: var(--blackColor);
+    }
+    font-size: var(--smallFontSize);
+    justify-content: center;
+    line-height: 1.2rem;
+    margin-bottom: 3rem;
+   }
+   .redText{
+    padding-bottom: 3rem;
+   }
+   .ticket{
+    padding-top: 2rem;
+background-color: var(--primaryColor);
+padding: 1.2rem;
+border-radius: 40px;
+}
   }
+
+  
 
   //media querie
 

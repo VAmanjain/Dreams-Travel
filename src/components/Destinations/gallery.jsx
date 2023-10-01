@@ -1,58 +1,40 @@
-// import React from 'react'
-// import Data from './destinationData'
-// import { useParams } from 'react-router-dom'
-// import { TiLocation } from "react-icons/ti";
+import React, { useState } from "react";
 
+import { NavLink as RouterLink } from "react-router-dom";
 
-// const Gallery = () => {
-//   const {id} = useParams();
-//   const data = Data.find((item) => item.id === parseInt(id));
+import { Link as ScrollLink } from "react-scroll";
 
-  
-//   return (
-//     <div name="destination" className="destination section conatiner">
-//       <div className="secContainer">
-// <div className="destinationContainer grid">
-//           {Data.map((Data) => {
-//             return (
-//                 <div className="singleDestination" key={Data.id}>
-//                   <div className="imgDiv">
-//                     <img src={Data.img} alt="" />
+import Data from "./destinationData";
+import { useParams } from "react-router-dom";
+import { TiLocation } from "react-icons/ti";
+import Destinations from "./destinations";
+import { useLocation, useNavigate } from "react-router-dom";
 
-//                     <div className="descInfo flex">
-//                       <div className="text">
-//                       </div>
-//                       <span className="rating">{Data.rating}</span>
-//                     </div>
-//                     <div className="descInfo flex">
-//                     <div className="text">
-//                       <span className="name">{Data.name}</span>
-//                       <p className="flex">
-//                         <TiLocation className="icon" />
-//                         {Data.location}
-//                       </p>
-//                     </div>
-   
-//                   </div>
-//                   </div>
-//                 </div>
-            
-//             );
-//           })}
-//         </div>
-//     </div>
-//     </div>
-//   )
-// }
-
-// export default Gallery
-import React from 'react';
-import Data from './destinationData';
-import { useParams } from 'react-router-dom';
-import { TiLocation } from 'react-icons/ti';
-import Destinations from './destinations';
+import * as Scroll from "react-scroll";
 
 const Gallery = () => {
+  const path = useLocation().pathname;
+  const location = path.split("/")[1];
+  const navigate = useNavigate();
+  const scroller = Scroll.scroller;
+
+  const goToPageAndScroll = async (selector) => {
+    await navigate("/");
+    await scroller.scrollTo(selector, {
+      duration: 500,
+      smooth: true,
+      offset: -75,
+      spy: true,
+    });
+  };
+  const [justifyActive, setJustifyActive] = useState("tab1");
+
+  const handleJustifyClick = (value) => {
+    if (value === justifyActive) {
+      return;
+    }
+  };
+
   const { id } = useParams();
   const selectedDestination = Data.find((item) => item.id === parseInt(id));
 
@@ -62,12 +44,11 @@ const Gallery = () => {
   }
 
   return (
-    <div name="destination" className="destination section container">
-      <div className="secTitle mt-[2rem] hero ">
-          
-          <h1>{selectedDestination.location}</h1>
-          <span className="redText ">Popular Places </span>
-        </div>
+    <div name="destination" className="destination section container gallery">
+      <div className="secTitle mt-[2rem] hero  text-center head  ">
+        <h1 className="mb-2">{selectedDestination.location}</h1>
+        <span className="redText text-center ">Popular Places </span>
+      </div>
       <div className="secContainer">
         <div className="destinationContainer grid">
           <div className="singleDestination" key={selectedDestination.id}>
@@ -167,22 +148,81 @@ const Gallery = () => {
             </div>
           </div>
         </div>
-
-
-
       </div>
-        {/* <div className="secTitle mt-[4rem] hero ">
+
+{/* ------------------our trips---------------------------- */}
+      <div className="head mt-[5rem] ">
+        <h1 className="text-center">Our Trips</h1>
+        <hr />
+{/* -----------------------First trips---------------- */}
+        <div className="text-black-900">
+          <h2>Glimpse of {selectedDestination.location}</h2>
+          <h4>Duration: {selectedDestination.duration1}</h4>
+          <span className="my-[1rem]">
+            time period : <i> {selectedDestination.period1}</i>
+          </span>
           
-          <h1>OUR Trips</h1>
-          <span className="redText ">Popular Places </span>
-        </div>
-        <div className="secContainer book ">
-          <div className='mt-[4rem]'>
-            <h1>Decemeber,2023</h1>
-          <h4>Tour duration: 15days </h4>
-          <span></span>
+          <div className="highlight">
+            <b>Locations:</b>
+            <p>{selectedDestination.highlights1}</p>
           </div>
-        </div> */}
+          <div className="par">
+            <b>Description:</b>
+            <p>{selectedDestination.des1}</p>
+          </div>
+          <div className=" redText text-center ">
+            <RouterLink to="/book" className="ticket">
+             Book You Ticket
+            </RouterLink>
+          </div>
+        </div>
+        <hr />
+{/* -------------------------second Trip-------------------- */}
+        <div className="text-black-900">
+          <h2> New year vacation in {selectedDestination.location}</h2>
+          <h4>Duration: {selectedDestination.duration2}</h4>
+          <span className="my-[1rem]">
+            time period : <i> {selectedDestination.period2}</i>
+          </span>
+          
+          <div className="highlight">
+            <b>Locations:</b>
+            <p>{selectedDestination.highlights2}</p>
+          </div>
+          <div className="par">
+            <b>Description:</b>
+            <p>{selectedDestination.des2}</p>
+          </div>
+          <div className=" redText text-center ">
+            <RouterLink to="/book" className="ticket">
+             Book You Ticket
+            </RouterLink>
+          </div>
+        </div>
+        <hr />
+{/* ----------------------third trip------------------------ */}
+        <div className="text-black-900">
+          <h2> {selectedDestination.location} in January</h2>
+          <h4>Duration: {selectedDestination.duration3}</h4>
+          <span className="my-[1rem]">
+            time period : <i> {selectedDestination.period3}</i>
+          </span>
+          
+          <div className="highlight">
+            <b>Locations:</b>
+            <p>{selectedDestination.highlights3}</p>
+          </div>
+          <div className="par">
+            <b>Description:</b>
+            <p>{selectedDestination.des3}</p>
+          </div>
+          <div className=" redText text-center ">
+            <RouterLink to="/book" className="ticket">
+             Book You Ticket
+            </RouterLink>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
