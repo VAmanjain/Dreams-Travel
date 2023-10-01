@@ -6,16 +6,8 @@ import {
   useLocation,
   useNavigate,
 } from "react-router-dom";
-
 import { Link as ScrollLink } from "react-scroll";
 import * as Scroll from "react-scroll";
-
-//Import icon
-
-import { MdLocationPin } from "react-icons/md";
-import { BsFillCreditCardFill } from "react-icons/bs";
-import { BsFillCalendarDateFill } from "react-icons/bs";
-import { BiSearchAlt } from "react-icons/bi";
 import { TiLocation } from "react-icons/ti";
 
 //Import Photos
@@ -28,7 +20,7 @@ import Image5 from "../../Assest/london.jpg";
 import Image6 from "../../Assest/Image6.jpg";
 import Image7 from "../../Assest/India.jpg";
 import Image8 from "../../Assest/Dreams.jpg";
-import Data from "./destinationData";
+
 
 //lets create an array that is gonna contain all destination data and we loop through
 
@@ -81,12 +73,6 @@ const destinations = [
     name: "Yoho National Park, Field",
     location: "India",
     rating: 4.3,
-  },
-  {
-    id: 8,
-    img: Image8,
-    location: "Your Dreams Travel",
-    rating: "Plan",
   },
 ];
 

@@ -67,4 +67,75 @@ root {
   border-radius: 10px;
   color: var(--whiteColor);
   background-color: hsla(214, 97%, 27%, 0.694) !important;
+}
+
+.secTitle {
+  font-size: var(--h1FontSize);
+  color: var(--primaryColor);
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.singleDestination {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  height: 260px;
+}
+.singleDestination .imgDiv {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.singleDestination .imgDiv img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 3s ease-in-out;
+}
+.singleDestination:hover .imgDiv img {
+  scale: 1.1;
+}
+.singleDestination .descInfo {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 2rem 1rem;
+  justify-content: space-between;
+}
+.singleDestination .descInfo ::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(200, 200, 200, 0.3));
+  z-index: -1;
+}
+.singleDestination .descInfo .text {
+  gap: 0.5rem;
+  color: var(--whiteColor);
+}
+.singleDestination .descInfo .name {
+  font-weight: 500;
+  display: block;
+  padding-bottom: 0.3rem;
+  font-weight: var(--h3FontSize);
+}
+.singleDestination .descInfo .flex,
+.singleDestination .descInfo .icon {
+  font-size: var(--normalFontSize);
+}
+.singleDestination .rating {
+  padding: 8px 1rem;
+  border-radius: var(--borderRadius);
+  background: rgba(245, 245, 245, 0.37);
+  border: 1.5px solid rgba(255, 255, 255, 0.241);
+  font-size: var(--h3FontSize);
+  font-weight: 600;
+  color: var(--whiteColor);
 }/*# sourceMappingURL=dream.css.map */

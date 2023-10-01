@@ -23,7 +23,7 @@ const Book = () => {
   const scroller = Scroll.scroller;
 
   const goToPageAndScroll = async (selector) => {
-    alert("Our team will connect with you ASAP !!!");
+    alert("You booking is confirmed. Our Team will contact you via for futhuer process");
 
     await navigate("/");
     await scroller.scrollTo(selector, {

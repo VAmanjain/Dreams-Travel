@@ -67,7 +67,7 @@ const Navbar = () => {
 
       <div className={navBar}>
         <ul>
-          {location == "test" ? (
+          {location == "test" || "contact" || "book"|| "gallery"  ? (
             <>
               <li className="navList" onClick={() => goToPageAndScroll("home")}>
                 Home
@@ -90,31 +90,7 @@ const Navbar = () => {
                 </RouterLink>
               </li>
             </>
-          ) : location == "contact" ? (
-            <>
-              <li className="navList" onClick={() => goToPageAndScroll("home")}>
-                Home
-              </li>
-              <li
-                className="navList"
-                onClick={() => goToPageAndScroll("destination")}
-              >
-                Destinations
-              </li>
-              <li
-                className="navList"
-                onClick={() => goToPageAndScroll("about")}
-              >
-                About
-              </li>
-              <li className="navList">
-                <RouterLink to="/contact" className="text-white">
-                  contact
-                </RouterLink>
-              </li>
-             
-            </>
-          ) : (
+          )  : (
             <>
               <li className="navList">
                 <ScrollLink

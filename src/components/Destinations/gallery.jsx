@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { NavLink as RouterLink } from "react-router-dom";
 
@@ -27,6 +27,11 @@ const Gallery = () => {
       spy: true,
     });
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [justifyActive, setJustifyActive] = useState("tab1");
 
   const handleJustifyClick = (value) => {
@@ -42,6 +47,8 @@ const Gallery = () => {
     // Handle the case when the destination with the specified ID is not found.
     return <div>Destination not found</div>;
   }
+
+
 
   return (
     <div name="destination" className="destination section container gallery">
