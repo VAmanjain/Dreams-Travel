@@ -3,14 +3,12 @@ import "./Questions.css";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
-
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import { red } from "@mui/material/colors";
 
 export default function Questions() {
-
-  function review (){
-    alert("Our team answer questions in 24hours.!! ")
+  function review() {
+    alert("Our team answer questions in 24hours.!! ");
   }
 
   return (
@@ -21,7 +19,7 @@ export default function Questions() {
       <div className="  secContainer grid container">
         <div className="accordion grid ">
           <div className="secContent">
-            <Accordion  >
+            <Accordion>
               <div className="secHeading">
                 <AccordionSummary
                   expandIcon={<ArrowDownwardIcon />}
@@ -66,7 +64,7 @@ export default function Questions() {
             </Accordion>
           </div>
           <div className="secContent">
-            <Accordion >
+            <Accordion>
               <div className="secHeading">
                 <AccordionSummary
                   expandIcon={<ArrowDownwardIcon />}
@@ -114,29 +112,24 @@ export default function Questions() {
 
         <div className="form">
           <div className="secHeading">
-            <h4 >Do you have any specific questions?</h4>
-            <p >
+            <h4>Do you have any specific questions?</h4>
+            <p>
               Please fill the form below and our dedicated team will get intouch
               with you as soon as possible.
             </p>
           </div>
-<form action="">
-
-          <div className="formContent grid">
-            <input
-              type="email"
-              placeholder="Enter email address"
-             
-            />
-            <textarea
-              placeholder="Enter your question here"
-              className="px-3"
-            ></textarea>
-            <button className="btn" onClick={() => review() } >
-              Submit Inquiery
-            </button>
-          </div>
-</form>
+          <form action="">
+            <div className="formContent grid">
+              <input type="email" placeholder="Enter email address" />
+              <textarea
+                placeholder="Enter your question here"
+                className="px-3"
+              ></textarea>
+              <button className="btn" onClick={() => review()}>
+                Submit Inquiery
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>

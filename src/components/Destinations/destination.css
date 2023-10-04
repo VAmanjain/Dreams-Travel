@@ -142,7 +142,7 @@
 }
 .destination .secContainer .destinationContainer .singleDestination .descInfo .flex,
 .destination .secContainer .destinationContainer .singleDestination .descInfo .icon {
-  font-size: var(--normalFontSize);
+  font-size: var(--h2FontSize);
 }
 .destination .secContainer .destinationContainer .singleDestination .rating {
   padding: 8px 1rem;

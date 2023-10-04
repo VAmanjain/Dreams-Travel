@@ -3,13 +3,11 @@ import "./navbar.css";
 import ConnectingAirportsIcon from "@mui/icons-material/ConnectingAirports";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-
 import {
   NavLink as RouterLink,
   useLocation,
   useNavigate,
 } from "react-router-dom";
-
 import { Link as ScrollLink } from "react-scroll";
 import * as Scroll from "react-scroll";
 
@@ -55,7 +53,7 @@ const Navbar = () => {
               smooth={true}
               offset={-75}
               duration={500}
-              className=" text-[1.5rem] text-white "
+              className=" text-[1.6rem] text-white "
             >
               Dreams Travel
             </ScrollLink>
@@ -67,7 +65,7 @@ const Navbar = () => {
 
       <div className={navBar}>
         <ul>
-          {location == "test" || "contact" || "book"|| "gallery"  ? (
+          {location === "test" || "contact" || "book" || "gallery" ? (
             <>
               <li className="navList" onClick={() => goToPageAndScroll("home")}>
                 Home
@@ -90,7 +88,7 @@ const Navbar = () => {
                 </RouterLink>
               </li>
             </>
-          )  : (
+          ) : (
             <>
               <li className="navList">
                 <ScrollLink
@@ -130,7 +128,6 @@ const Navbar = () => {
                   Contact
                 </RouterLink>
               </li>
-             
             </>
           )}
         </ul>

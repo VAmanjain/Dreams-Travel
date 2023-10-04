@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import * as Scroll from "react-scroll";
-import Image from '../../Assest/form1.jpg'
+import Image from '../../Assest/form.jpg'
 import {
 
   useLocation,

@@ -1,6 +1,6 @@
 import React from 'react'
 import './main.css'
-import Image from   '../../Assest/back3.jpg'
+import Image from   '../../Assest/back.jpg'
 const Maint = () => {
   return (
         <>

@@ -5,7 +5,6 @@ import {
   useLocation,
   useNavigate,
 } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
 import * as Scroll from "react-scroll";
 
 const Travel = () => {
@@ -35,7 +34,7 @@ const Travel = () => {
             <img src={Image} alt="" />
             <div className="descInfo flex">
               <div className="text">
-                <h6>Want to travel by you dream Destination??</h6>
+                <h6>Want to travel to your dream Destination??</h6>
                 <h1
                   className="flex"
                   onClick={() => goToPageAndScroll("home")}

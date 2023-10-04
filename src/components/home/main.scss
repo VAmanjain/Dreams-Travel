@@ -62,7 +62,7 @@ root {
 
     p {
       padding: 1rem 0;
-      font-size: var(--normalFontSize);
+      font-size: var(--h2FontSize);
       font-weight: 500;
     }
 
@@ -80,8 +80,12 @@ root {
   .home{
     .sectionText{
       h1{
-        font-size: 2rem;
+        font-size: var(--h1FontSize);
       }
+      p{
+        font-size: var(--normalFontSize);
+      }
+      
     }
   }
   

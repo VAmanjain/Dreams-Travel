@@ -48,6 +48,7 @@ root {
 .navBar .logoDiv span {
   font-size: var(--h1FontSize);
   justify-content: center;
+  font-weight: 500;
 }
 .navBar .menu ul {
   display: flex;

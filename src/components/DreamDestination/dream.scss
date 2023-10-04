@@ -176,7 +176,9 @@ root {
   width: 100%;
   height: 180vh;
 
-
+.t-form{
+width: 50%;
+}
   .imgBg{
       position: absolute;
       width: 100%;
@@ -215,8 +217,10 @@ root {
 
 @media screen and (max-width:480px) {
   .trip{
+   
     width: 100%;
     height: 220vh;
+
 
     span{
       font-size: var(--smallFontSize);
@@ -228,6 +232,12 @@ root {
     width: 100%;
     height: 200vh;
 
+    .trip-box{
+      padding: 1rem;
+    }
+    .t-form{
+      width: 100% ;
+    }
     span{
       font-size: var(--h3FontSize);
     }

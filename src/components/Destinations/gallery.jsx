@@ -1,15 +1,9 @@
 import React, { useEffect, useState } from "react";
-
 import { NavLink as RouterLink } from "react-router-dom";
-
-import { Link as ScrollLink } from "react-scroll";
-
 import Data from "./destinationData";
 import { useParams } from "react-router-dom";
 import { TiLocation } from "react-icons/ti";
-import Destinations from "./destinations";
 import { useLocation, useNavigate } from "react-router-dom";
-
 import * as Scroll from "react-scroll";
 
 const Gallery = () => {
@@ -30,7 +24,7 @@ const Gallery = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  }, []);
 
   const [justifyActive, setJustifyActive] = useState("tab1");
 
@@ -47,8 +41,6 @@ const Gallery = () => {
     // Handle the case when the destination with the specified ID is not found.
     return <div>Destination not found</div>;
   }
-
-
 
   return (
     <div name="destination" className="destination section container gallery">
@@ -70,7 +62,7 @@ const Gallery = () => {
                     {selectedDestination.title1}
                   </p>
                 </div>
-                <span className="rating">{selectedDestination.rating}</span>
+                {/* <span className="rating">{selectedDestination.rating}</span> */}
               </div>
             </div>
           </div>
@@ -86,7 +78,7 @@ const Gallery = () => {
                     {selectedDestination.title2}
                   </p>
                 </div>
-                <span className="rating">{selectedDestination.rating}</span>
+                {/* <span className="rating">{selectedDestination.rating}</span> */}
               </div>
             </div>
           </div>
@@ -102,7 +94,7 @@ const Gallery = () => {
                     {selectedDestination.title3}
                   </p>
                 </div>
-                <span className="rating">{selectedDestination.rating}</span>
+                {/* <span className="rating">{selectedDestination.rating}</span> */}
               </div>
             </div>
           </div>
@@ -118,7 +110,7 @@ const Gallery = () => {
                     {selectedDestination.title4}
                   </p>
                 </div>
-                <span className="rating">{selectedDestination.rating}</span>
+                {/* <span className="rating">{selectedDestination.rating}</span> */}
               </div>
             </div>
           </div>
@@ -134,7 +126,7 @@ const Gallery = () => {
                     {selectedDestination.title5}
                   </p>
                 </div>
-                <span className="rating">{selectedDestination.rating}</span>
+                {/* <span className="rating">{selectedDestination.rating}</span> */}
               </div>
             </div>
           </div>
@@ -150,25 +142,25 @@ const Gallery = () => {
                     {selectedDestination.title6}
                   </p>
                 </div>
-                <span className="rating">{selectedDestination.rating}</span>
+                {/* <span className="rating">{selectedDestination.rating}</span> */}
               </div>
             </div>
           </div>
         </div>
       </div>
 
-{/* ------------------our trips---------------------------- */}
+      {/* ------------------our trips---------------------------- */}
       <div className="head mt-[5rem] ">
         <h1 className="text-center">Our Trips</h1>
         <hr />
-{/* -----------------------First trips---------------- */}
+        {/* -----------------------First trips---------------- */}
         <div className="text-black-900">
           <h2>Glimpse of {selectedDestination.location}</h2>
           <h4>Duration: {selectedDestination.duration1}</h4>
           <span className="my-[1rem]">
             time period : <i> {selectedDestination.period1}</i>
           </span>
-          
+
           <div className="highlight">
             <b>Locations:</b>
             <p>{selectedDestination.highlights1}</p>
@@ -179,19 +171,19 @@ const Gallery = () => {
           </div>
           <div className=" redText text-center ">
             <RouterLink to="/book" className="ticket">
-             Book You Ticket
+              Book You Ticket
             </RouterLink>
           </div>
         </div>
         <hr />
-{/* -------------------------second Trip-------------------- */}
+        {/* -------------------------second Trip-------------------- */}
         <div className="text-black-900">
           <h2> New year vacation in {selectedDestination.location}</h2>
           <h4>Duration: {selectedDestination.duration2}</h4>
           <span className="my-[1rem]">
             time period : <i> {selectedDestination.period2}</i>
           </span>
-          
+
           <div className="highlight">
             <b>Locations:</b>
             <p>{selectedDestination.highlights2}</p>
@@ -202,19 +194,19 @@ const Gallery = () => {
           </div>
           <div className=" redText text-center ">
             <RouterLink to="/book" className="ticket">
-             Book You Ticket
+              Book You Ticket
             </RouterLink>
           </div>
         </div>
         <hr />
-{/* ----------------------third trip------------------------ */}
+        {/* ----------------------third trip------------------------ */}
         <div className="text-black-900">
           <h2> {selectedDestination.location} in January</h2>
           <h4>Duration: {selectedDestination.duration3}</h4>
           <span className="my-[1rem]">
             time period : <i> {selectedDestination.period3}</i>
           </span>
-          
+
           <div className="highlight">
             <b>Locations:</b>
             <p>{selectedDestination.highlights3}</p>
@@ -225,7 +217,7 @@ const Gallery = () => {
           </div>
           <div className=" redText text-center ">
             <RouterLink to="/book" className="ticket">
-             Book You Ticket
+              Book You Ticket
             </RouterLink>
           </div>
         </div>
