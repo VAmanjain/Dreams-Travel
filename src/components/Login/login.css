@@ -49,13 +49,13 @@ root {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 5%);
-  background-color: hsla(214, 97%, 27%, 0.694);
+  background-color: hsl(214, 97%, 27%);
   color: var(--whiteColor);
   width: 35%;
   height: auto;
   margin: auto;
   border-radius: 20px;
-  box-shadow: 0px 2px 3px 4px rgba(236, 213, 213, 0.516);
+  box-shadow: 0px 0px 5px rgb(236, 213, 213);
 }
 .for .icon {
   color: var(--whiteColor);
@@ -69,6 +69,17 @@ root {
 }
 .for .toggle {
   color: var(--primarycolorLght) !important;
+}
+
+.log-btn {
+  width: 60%;
+  background-color: #faf9f9 !important;
+  color: var(--primaryColor) !important;
+}
+
+.log-btn:hover {
+  background-color: #f0f8ff !important;
+  box-shadow: 0px 0px 0px 2px #faf9f9;
 }
 
 @media screen and (max-width: 680px) {

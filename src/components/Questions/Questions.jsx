@@ -19,7 +19,7 @@ export default function Questions() {
       <div className="  secContainer grid container">
         <div className="accordion grid ">
           <div className="secContent">
-            <Accordion>
+            <Accordion className="text-white" >
               <div className="secHeading">
                 <AccordionSummary
                   expandIcon={<ArrowDownwardIcon />}
@@ -42,7 +42,7 @@ export default function Questions() {
             </Accordion>
           </div>
           <div className="secContent">
-            <Accordion style={{ background: red }}>
+            <Accordion  className="text-white" >
               <div className="secHeading">
                 <AccordionSummary
                   expandIcon={<ArrowDownwardIcon />}
@@ -64,7 +64,7 @@ export default function Questions() {
             </Accordion>
           </div>
           <div className="secContent">
-            <Accordion>
+            <Accordion  className="text-white"  >
               <div className="secHeading">
                 <AccordionSummary
                   expandIcon={<ArrowDownwardIcon />}
@@ -85,7 +85,7 @@ export default function Questions() {
             </Accordion>
           </div>
           <div className="secContent">
-            <Accordion>
+            <Accordion  className="text-white" >
               <div className="secHeading">
                 <AccordionSummary
                   expandIcon={<ArrowDownwardIcon />}

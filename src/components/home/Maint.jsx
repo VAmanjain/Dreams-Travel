@@ -10,7 +10,7 @@ const Maint = () => {
       </div>
 
       <div className="sectionText">
-        <h1>Enjoy you Dream's vactions with Us !!</h1>
+        <h1>Enjoy your Dream's vactions with Us !!</h1>
         <p>
           Complete your travel dreams with your partner , freinds , family life is short for travel.
         </p>

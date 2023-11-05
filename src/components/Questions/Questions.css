@@ -48,6 +48,7 @@ textarea {
 }
 .questions .accordion .secContent {
   width: 85%;
+  color: var(--whiteColor) !important;
 }
 .questions .accordion .secHeading {
   border-radius: 4px 4px 0 0;

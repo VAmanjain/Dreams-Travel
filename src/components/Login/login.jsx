@@ -106,7 +106,6 @@ function App() {
                 <BsGithub className='icon'/>
               </MDBBtn>
             </div>
-
             <p className="text-center mt-3">or:</p>
           </div>
 
@@ -117,8 +116,7 @@ function App() {
             <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='Remember me'  />
             <a href="!#" className='text-white' >Forgot password?</a>
           </div>
-
-          <MDBBtn className="mb-4 w-100 text-center "  onClick={() => goToPageAndScroll("home")}>log in</MDBBtn>
+          <MDBBtn className="mb-4  text-center log-btn "  onClick={() => goToPageAndScroll("home")}>log in</MDBBtn>
           <p className="text-center">Not a member? <a href="#" className='text-white' onClick={() => handleJustifyClick('tab1')} active={justifyActive === 'tab1'}  >Signup</a></p>
 
         </MDBTabsPane>
@@ -158,7 +156,7 @@ function App() {
             <MDBCheckbox name='flexCheck' id='flexCheckDefault' label='I have read and agree to the terms' />
           </div>
 
-          <MDBBtn className="mb-4 w-100"  onClick={() => goToPageAndScroll("home")}>signup</MDBBtn>
+          <MDBBtn className="mb-4 log-btn"  onClick={() => goToPageAndScroll("home")}>signup</MDBBtn>
 
         </MDBTabsPane>
 

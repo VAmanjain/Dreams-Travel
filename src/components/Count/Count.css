@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+root {
+  --primaryColor: #023e8a;
+  --primarycolorLght: #0077b6;
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(216, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyColor: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 1%, 94%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.6rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.count {
+  margin-top: 60px;
+  width: 100%;
+  height: auto;
+}
+.count .count-box {
+  margin: auto;
+  width: 75%;
+  height: 30vh;
+  border-radius: 2rem;
+  background-color: var(--primaryColor);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.count .count-box .counts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+  height: 8rem;
+  border-radius: 1.5rem;
+}
+.count .count-box .counts .main-box {
+  color: var(--whiteColor);
+}
+.count .count-box .counts .main-box .count-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.count .count-box .counts .main-box .count-head .numbers {
+  font-size: 2.5rem;
+}
+
+@media screen and (min-width: 300px) {
+  .count {
+    width: 100%;
+    height: auto;
+  }
+  .count .count-box {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .count .count-box .counts {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .count {
+    width: 100%;
+    height: auto;
+  }
+  .count .count-box {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .count .count-box .counts {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 980px) {
+  .count {
+    width: 100%;
+    height: auto;
+  }
+  .count .count-box {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .count .count-box .counts {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Count.css.map */

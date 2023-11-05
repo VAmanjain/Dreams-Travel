@@ -45,7 +45,7 @@ root {
 }
 .home .sectionText {
   position: absolute;
-  height: 100%;
+  height: auto;
   top: 30%;
   bottom: 50%;
   color: var(--whiteColor);
