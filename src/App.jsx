@@ -9,13 +9,29 @@ import Contact from "./components/ContactUs/Contact";
 import Gallery from "./components/Destinations/gallery";
 import Book from "./components/DreamDestination/book";
 import Trip from "./components/DreamDestination/trip";
+import Loader from "./Loader/Loader";
+import { useEffect, useState } from "react";
+
+import AddTaskIcon from '@mui/icons-material/AddTask';
 
 
 
 function App() {
+  
+const [screenLoading, setScreenLoading] = useState(false);
+
+useEffect(() => {
+  setScreenLoading(true);
+  setTimeout(() => {
+    setScreenLoading(false);
+  }, 1000);
+}, []);
   return (
     <div>
-      <Router>
+      {screenLoading ? (
+        <Loader/>
+        ) : (
+          <Router>
         <Navbar />
         <Routes>
           <Route path="*" element={<Content />} />
@@ -25,9 +41,10 @@ function App() {
           <Route path="/book" element={<Book />} />
           <Route path="/trip" element={<Trip/>} />
         </Routes>
-      </Router>
+      </Router>  )}
     </div>
   );
 }
+
 
 export default App;

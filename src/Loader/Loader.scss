@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryColor: #033c87;
+  --primarycolorLght: #0077b6;
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(216, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyColor: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 1%, 94%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.6rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.custom-loader {
+    width:8rem;
+    height:8rem;
+    --c:radial-gradient(farthest-side,#ededed 92%,#0000);
+    background: 
+      var(--c) 50% 0,
+      var(--c) 50% 100%,
+      var(--c) 100% 50%,
+      var(--c) 0    50%;
+    background-size:2rem 2rem;
+    background-repeat:no-repeat;
+    animation:s7 0.8s infinite;
+  }
+  @keyframes s7 {to{transform: rotate(.5turn)}}
