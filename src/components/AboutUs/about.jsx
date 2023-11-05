@@ -13,7 +13,7 @@ const About = () => {
       <div className="subscribe section container">
         <div className="secContainer grid">
           <div className="Imge">
-            <img src={Image1} alt="Div Iamge" />
+            <img src={Image1} alt="Div Iamge" className="imge-1" />
           </div>
 
           <div className="textDiv">
@@ -48,7 +48,7 @@ const About = () => {
             </p>
           </div>
           <div className="Imge">
-            <img src={Image2} alt="Div Iamge" style={{ width: "100%"  }} />
+            <img src={Image2} alt="Div Iamge" style={{ width: "100%"  }} className="imge-2" />
           </div>
         </div>
       </div>

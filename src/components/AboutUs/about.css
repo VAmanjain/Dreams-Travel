@@ -26,14 +26,19 @@ root {
 }
 
 .about .header {
+  width: 100%;
   font-weight: 700;
   font-size: var(--biggestFontSize);
   justify-content: center;
   color: var(--primaryColor);
   padding-bottom: 2rem;
 }
-.about img {
-  border-radius: 40px;
+.about .imge-1 {
+  border-radius: 35px 35px 0px 35px;
+  width: 50%;
+}
+.about .imge-2 {
+  border-radius: 0px 35px 35px 35px;
 }
 .about .subscribe {
   width: 85%;
@@ -41,7 +46,7 @@ root {
   margin: auto;
 }
 .about .subscribe .secContainer {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 .about .subscribe .secContainer .textDiv h4 {
   text-align: center;
@@ -57,12 +62,6 @@ root {
   padding: 0;
   font-size: var(--normalFontSize);
   color: var(--blackColor);
-}
-.about .subscribe .secContainer .textDiv .Imge {
-  border-radius: 50% !important;
-}
-.about .subscribe .secContainer .textDiv .Imge img {
-  border-radius: 40px;
 }
 
 @media screen and (max-wdth: 580px) {

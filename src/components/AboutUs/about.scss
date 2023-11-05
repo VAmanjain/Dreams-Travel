@@ -33,14 +33,19 @@ root{
 .about{
 
 .header{
+  width: 100%;
   font-weight: 700;
   font-size: var(--biggestFontSize);
   justify-content: center;
   color: var(--primaryColor);
   padding-bottom: 2rem;
 }
-img{
-  border-radius: 40px;
+.imge-1{
+  border-radius: 35px 35px 0px  35px;
+  width: 50%;
+}
+.imge-2{
+  border-radius: 0px 35px 35px  35px;
 }
 
 
@@ -50,7 +55,7 @@ img{
   height: auto;
   margin: auto;
   .secContainer {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
   
     .textDiv {
       h4 {
@@ -67,12 +72,6 @@ img{
         padding:  0;
         font-size: var(--normalFontSize);
         color: var(--blackColor);
-      }
-      .Imge{
-        border-radius: 50% !important;
-        img{
-          border-radius: 40px;
-        }
       }
       
     }

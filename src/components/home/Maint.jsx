@@ -1,6 +1,7 @@
 import React from 'react'
 import './main.css'
 import Image from   '../../Assest/back.jpg'
+import { Link as ScrollLink } from "react-scroll";
 const Maint = () => {
   return (
         <>
@@ -15,9 +16,17 @@ const Maint = () => {
           Complete your travel dreams with your partner , freinds , family life is short for travel.
         </p>
 
-<button className="btn"> 
-Let's travel
-</button>
+        <ScrollLink
+              to="destination"
+              spy={true}
+              smooth={true}
+              offset={-75}
+              duration={500}
+              className=" text-[1.6rem] text-white btn"
+            >
+              Let's Travel
+            </ScrollLink>
+
 
       </div>
     </div>

@@ -72,6 +72,10 @@ root {
       padding-right: 3rem;
       font-size: var(--h3FontSize);
     }
+    .btn:hover {
+      background-color: var(--whiteColor) !important;
+      columns: var(--primaryColor);
+    }
   }
 }
 

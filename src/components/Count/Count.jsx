@@ -26,7 +26,7 @@ const Count = () => {
             <h1 className="count-head">
               <CountUp
                 enableScrollSpy="true"
-                start={0}
+                start={100}
                 end={200}
                 duration={5}
                 className="numbers"
@@ -41,13 +41,13 @@ const Count = () => {
             <h1 className="count-head">
               <CountUp
                 enableScrollSpy="true"
-                start={0}
+                start={500}
                 end={1000}
                 duration={1}
                 className="numbers"
               />+
             </h1>
-            <p>Counteries tour</p>
+            <p>Travel's Reviews</p>
           </div>
         </div>
         <div className="counts">
@@ -63,7 +63,7 @@ const Count = () => {
                 className="numbers"
               />
             </h1>
-            <p>Counteries tour</p>
+            <p>Rating</p>
           </div>
         </div>
       </div>

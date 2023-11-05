@@ -66,6 +66,11 @@ root {
   padding-right: 3rem;
   font-size: var(--h3FontSize);
 }
+.home .sectionText .btn:hover {
+  background-color: var(--whiteColor) !important;
+  -moz-columns: var(--primaryColor);
+       columns: var(--primaryColor);
+}
 
 @media screen and (max-width: 468px) {
   .home .sectionText h1 {
