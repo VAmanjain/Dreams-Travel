@@ -35,6 +35,16 @@ body {
   align-items: center;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: var(--primaryColor);
+}
+
+::selection {
+  color: white;
+  background: var(--primaryColor);
+}
+
 .grid {
   display: grid;
   align-items: center;

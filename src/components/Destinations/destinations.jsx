@@ -79,7 +79,7 @@ const Destinations = ({ destination, index, destinationData }) => {
         <div className="secTitle">
           <span className="redText">EXPLORE NOW</span>
           <h3>Find Your Dream Destination</h3>
-          <p>Fill in fields below best spot for your next tour</p>
+          <p> Best spot for your next tour</p>
         </div>
         <div className="destinationContainer grid">
           {destinations.map((destination) => {

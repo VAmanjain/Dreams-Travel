@@ -30,7 +30,8 @@ textarea {
 }
 
 .questions {
-  margin: 2rem;
+  width: 85%;
+  margin: auto;
   padding-bottom: 5rem;
 }
 .questions .Heading {

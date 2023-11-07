@@ -32,7 +32,7 @@ root {
 }
 .count .count-box {
   margin: auto;
-  width: 75%;
+  width: 85%;
   height: 30vh;
   border-radius: 2rem;
   background-color: var(--primaryColor);

@@ -39,6 +39,12 @@ root {
 .about .imge-2 {
   border-radius: 0px 35px 35px 35px;
 }
+.about .imge-1, .about .imge-2 {
+  width: 30rem;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .about .subscribe {
   width: 85%;
   height: auto;

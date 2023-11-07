@@ -25,6 +25,16 @@
   --borderRadius: 3rem;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: var(--primaryColor);
+}
+
+::selection {
+  color: white;
+  background: var(--primaryColor);
+}
+
 .footer {
   background-color: var(--primaryColor);
   padding: 2rem 0;

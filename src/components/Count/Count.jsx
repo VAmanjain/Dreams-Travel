@@ -13,7 +13,7 @@ const Count = () => {
                 enableScrollSpy="true"
                 start={0}
                 end={10}
-                duration={5}
+                duration={1}
                 className="numbers"
               />
             </h1>
@@ -28,7 +28,7 @@ const Count = () => {
                 enableScrollSpy="true"
                 start={100}
                 end={200}
-                duration={5}
+                duration={1}
                 className="numbers"
               />+
             </h1>
@@ -41,7 +41,7 @@ const Count = () => {
             <h1 className="count-head">
               <CountUp
                 enableScrollSpy="true"
-                start={500}
+                start={900}
                 end={1000}
                 duration={1}
                 className="numbers"
@@ -56,10 +56,10 @@ const Count = () => {
             <h1 className="count-head">
               <CountUp
                 enableScrollSpy="true"
-                start={0.0}
+                start={4.0}
                 end={4.9}
                 decimals={1}
-                duration={5}
+                duration={1}
                 className="numbers"
               />
             </h1>
