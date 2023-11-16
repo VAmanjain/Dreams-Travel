@@ -35,17 +35,6 @@ body {
   align-items: center;
 }
 
-::-moz-selection {
-  /* Code for Firefox */
-  color: white;
-  background: var(--primaryColor);
-}
-
-::selection {
-  color: white;
-  background: var(--primaryColor);
-}
-
 .grid {
   display: grid;
   align-items: center;
@@ -121,8 +110,8 @@ video {
 }
 
 ::selection {
-  background: var(--primaryColorLight);
-  color: var(--primaryColor);
+  background: var(--primaryColor);
+  color: var(--whiteColor);
 }
 
 ::-webkit-scrollbar {

@@ -8,17 +8,21 @@ import ConnectingAirportsIcon from "@mui/icons-material/ConnectingAirports";
 const Footer = () => {
   return (
     <div className="footer">
-      {/* <div className="imgBg">
-            <img src={World} alt="" />
-        </div> */}
       <div className="secContaine container grid">
         <div className="logoDiv">
           <ConnectingAirportsIcon className="icon" />
           <span>Dreams-Travel</span>
-          <div className="social flex "></div>
-          <FacebookIcon className="icon" />
-          <TwitterIcon className="icon" />
-          <InstagramIcon className="icon" />
+          <div className="social flex ">
+            <a href="/">
+              <FacebookIcon className="icon" />
+            </a>
+            <a href="">
+              <TwitterIcon className="icon" />
+            </a>
+            <a href="">
+              <InstagramIcon className="icon" />
+            </a>
+          </div>
         </div>
 
         <div className="footerLinks" data-aos="fade-up">

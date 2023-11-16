@@ -15,7 +15,7 @@ const Content = () => {
      <Travel/>
       <Questions />
       <About />
-      <Footer />
+     
     </div>
   );
 };

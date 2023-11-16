@@ -33,7 +33,8 @@ root {
 }
 
 .book{
-  background: linear-gradient(45deg , #bee9e8 , #62b6cb  , #cae9ff , #5fa8d3);
+  // background: linear-gradient(45deg , #bee9e8 , #62b6cb  , #cae9ff , #5fa8d3);
+  background-color: var(--whiteColor);
     width: 100%;
     height: 130vh;
     top: 0;
@@ -75,7 +76,7 @@ root {
             border-radius: 10px;
             
     color: var(--whiteColor) ;
-    background-color:  hsla(214, 97%, 27%, 0.694) !important;
+    background-color:  hsl(214, 97%, 27%) !important;
         }
 
     }
@@ -174,7 +175,8 @@ root {
 }
 
 .trip{
-  background: linear-gradient(45deg , #bee9e8 , #62b6cb  , #cae9ff , #5fa8d3);
+  // background: linear-gradient(45deg , #bee9e8 , #62b6cb  , #cae9ff , #5fa8d3);
+  background-color: var(--whiteColor);
   width: 100%;
   height: 180vh;
 
@@ -201,7 +203,7 @@ width: 50%;
   
     left: 50%;
     transform: translate(-50% , 5%);
-    background-color:  hsla(214, 97%, 27%, 0.694);
+    background-color:  hsl(214, 97%, 27%);
     color: var(--whiteColor);
  
    
@@ -211,7 +213,7 @@ width: 50%;
           border-radius: 10px;
           
   color: var(--whiteColor) ;
-  background-color:  hsla(214, 97%, 27%, 0.694) !important;
+  background-color:  hsl(214, 97%, 27%) !important;
       }
 
   }

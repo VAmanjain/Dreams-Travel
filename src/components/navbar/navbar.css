@@ -133,13 +133,12 @@ root {
   .navBar .menu ul li {
     font-size: var(--h3FontSize);
     font-weight: 400;
-    padding: 1rem 0;
     text-align: center;
     cursor: pointer;
   }
   .navBar .menu ul li:hover {
-    color: var(--primaryColor);
-    border-bottom: 1.5px solid var(--primaryColor);
+    color: var(--whiteColor);
+    border-bottom: 1.5px solid var(--whiteColor);
   }
 }
 @media screen and (min-width: 1240px) {
