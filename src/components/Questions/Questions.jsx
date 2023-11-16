@@ -17,7 +17,7 @@ export default function Questions() {
         <h3>Frequently Asked Questions</h3>
       </div>
       <div className="  secContainer grid container">
-        <div className="accordion grid ">
+        <div className="accordion grid  justify-center ">
           <div className="secContent">
             <Accordion className="text-white" >
               <div className="secHeading">

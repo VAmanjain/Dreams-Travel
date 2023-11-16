@@ -20,9 +20,9 @@ const Navbar = () => {
   const goToPageAndScroll = async (selector) => {
     await navigate("/");
     await scroller.scrollTo(selector, {
-      duration: 500,
+      duration: 400,
       smooth: true,
-      offset: -75,
+    
       spy: true,
     });
   };
