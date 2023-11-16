@@ -14,7 +14,7 @@ const Content = () => {
       <Destinations />
      <Travel/>
       <Questions />
-      <About />
+      {/* <About /> */}
      
     </div>
   );
