@@ -48,7 +48,7 @@ textarea {
   margin: auto;
 }
 .questions .accordion .secContent {
-  width: 85%;
+  width: 100%;
   color: var(--whiteColor) !important;
 }
 .questions .accordion .secHeading {

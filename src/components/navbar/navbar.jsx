@@ -44,22 +44,22 @@ const Navbar = () => {
       <div className="logoDiv">
         <ConnectingAirportsIcon className="icon" />
 
-        {location !== "test" ? (
+        {location === "test" || "contact" || "book" || "gallery" ? (
           <span>
-            {" "}
-            <ScrollLink
-              to="home"
-              spy={true}
-              smooth={true}
-              offset={-75}
-              duration={500}
-              className=" text-[1.6rem] text-white "
-            >
-              Dreams Travel
-            </ScrollLink>
+                    <span onClick={() => goToPageAndScroll("home")}>Dreams-Travel</span>
+         
           </span>
         ) : (
-          <span onClick={() => goToPageAndScroll("home")}>Drems-Travel</span>
+          <ScrollLink
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-75}
+          duration={500}
+          className=" text-[1.6rem] text-white "
+        >
+          Dreams Travel
+        </ScrollLink>
         )}
       </div>
 

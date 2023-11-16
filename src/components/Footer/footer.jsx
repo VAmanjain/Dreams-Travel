@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
 
         <div className="footerLinks" data-aos="fade-up">
-          <span className="linkTitle">Helpgul Links</span>
+          <span className="linkTitle">Helpful Links</span>
           <li>
             <a href="#">Destinationn</a>
           </li>

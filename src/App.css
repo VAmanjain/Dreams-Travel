@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +6,8 @@
 }
 
 :root {
-  --primaryColor:#023e8a;
-  --primarycolorLght:#0077b6;
+  --primaryColor: #023e8a;
+  --primarycolorLght: #0077b6;
   --bgColor: hsl(0, 0%, 100%);
   --formColor: hsl(216, 42%, 87%);
   --whiteColor: hsl(0, 0%, 100%);
@@ -15,19 +15,19 @@
   --greyColor: hsl(0, 0%, 51%);
   --inputColor: hsl(330, 12%, 97%);
   --cardColor: hsl(300, 1%, 94%);
-  --biggestFontSize: 2.5rem;
-  --h1FontSize: 1.6rem;
-  --h2FontSize: 1.25rem;
-  --h3FontSize: 1rem;
-  --normalFontSize: 0.938rem;
-  --smallFontSize: 0.813rem;
-  --smallestFontSize: 0.75rem;
+  --biggestFontSize: 3.5rem;
+  --h1FontSize: 2.6rem;
+  --h2FontSize: 2.25rem;
+  --h3FontSize: 2rem;
+  --normalFontSize: 1.938rem;
+  --smallFontSize: 1.813rem;
+  --smallestFontSize: 1.75rem;
   --borderRadius: 3rem;
 }
 
 body {
   background: var(--bgColor);
-  font-family: "Playfair Display SC", serif !important;
+  font-family: "Gentium Book Plus", serif;
 }
 
 .flex {
@@ -35,7 +35,8 @@ body {
   align-items: center;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: white;
   background: var(--primaryColor);
 }
@@ -64,6 +65,10 @@ a {
   color: var(--whiteColor) !important;
 }
 
+ul {
+  margin-bottom: 0% !important;
+}
+
 li {
   list-style: none;
 }
@@ -72,7 +77,8 @@ li {
   font-size: var(--h2FontSize);
 }
 
-img, video {
+img,
+video {
   width: 100%;
   height: auto;
 }
