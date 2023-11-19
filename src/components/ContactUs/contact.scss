@@ -29,7 +29,8 @@ root {
 
 .contact{
     width: 100%;
-    height: 120vh;
+    min-height: 100vh;
+    height: auto;
 
 
     .imgBg{

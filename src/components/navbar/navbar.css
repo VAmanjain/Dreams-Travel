@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -53,8 +53,8 @@ root {
 .navBar .menu ul {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
+  justify-content: end;
+  gap: 0.5rem;
   color: var(--whiteColor);
 }
 
@@ -83,15 +83,15 @@ root {
     flex-direction: column;
   }
   .menu ul li {
-    font-size: var(--h3FontSize);
+    font-size: var(--h2FontSize);
     font-weight: 500;
     padding: 1rem 0;
     text-align: center;
     cursor: pointer;
   }
   .menu ul li:hover {
-    color: var(--primaryColor);
-    border-bottom: 1.5px solid var(--primaryColorLight);
+    color: var(--whiteColor);
+    border-bottom: 1.5px solid var(--whiteColor);
   }
 }
 .menuIcon,
@@ -100,7 +100,7 @@ root {
 }
 .menuIcon:hover,
 .closeIcon:hover {
-  color: var(--primaryColor);
+  color: var(--whiteColor);
 }
 
 .closeIcon {
@@ -132,14 +132,13 @@ root {
   }
   .navBar .menu ul li {
     font-size: var(--h3FontSize);
-    font-weight: 500;
-    padding: 1rem 0;
+    font-weight: 400;
     text-align: center;
     cursor: pointer;
   }
   .navBar .menu ul li:hover {
-    color: var(--primaryColor);
-    border-bottom: 1.5px solid var(--primaryColor);
+    color: var(--whiteColor);
+    border-bottom: 1.5px solid var(--whiteColor);
   }
 }
 @media screen and (min-width: 1240px) {

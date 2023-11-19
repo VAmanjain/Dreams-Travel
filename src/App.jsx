@@ -11,8 +11,7 @@ import Book from "./components/DreamDestination/book";
 import Trip from "./components/DreamDestination/trip";
 import Loader from "./Loader/Loader";
 import { useEffect, useState } from "react";
-
-import AddTaskIcon from '@mui/icons-material/AddTask';
+import Footer from "./components/Footer/footer";
 
 
 
@@ -41,6 +40,7 @@ useEffect(() => {
           <Route path="/book" element={<Book />} />
           <Route path="/trip" element={<Trip/>} />
         </Routes>
+        <Footer />
       </Router>  )}
     </div>
   );

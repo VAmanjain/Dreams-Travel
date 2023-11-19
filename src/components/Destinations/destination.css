@@ -197,6 +197,20 @@
   border-radius: 40px;
 }
 
+.Our-trip {
+  margin: 5rem;
+}
+.Our-trip .head {
+  color: var(--primaryColor);
+  font-size: var(--biggestFontSize);
+  font-weight: 900;
+  margin-bottom: 4rem;
+}
+.Our-trip .plans .card {
+  border: 2px solid var(--primaryColor);
+  padding: 2rem;
+}
+
 @media screen and (min-width: 480px) {
   .destination .secContainer .searchField {
     grid-template-columns: repeat(2, 1fr);
@@ -205,6 +219,14 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.Our-trip {
+  margin: 5rem 1rem;
+}
+.Our-trip .plans .card {
+  border: 2px solid var(--primaryColor);
+  padding: 1rem;
+}
+
 @media screen and (min-width: 640px) {
   .destination .secContainer .secMenu {
     display: block;
@@ -226,6 +248,13 @@
   .destination .secContainer .secMenu .flex li:hover {
     color: var(--primaryColor);
     border: 1.5px dashed var(--primaryColor);
+  }
+  .Our-trip {
+    margin: 5rem 2rem;
+  }
+  .Our-trip .plans .card {
+    border: 2px solid var(--primaryColor);
+    padding: 1rem;
   }
 }
 @media screen and (min-width: 1014px) {
@@ -255,6 +284,13 @@
   }
   .destination .secContainer .searchField {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .Our-trip {
+    margin: 5rem;
+  }
+  .Our-trip .plans .card {
+    border: 2px solid var(--primaryColor);
+    padding: 1rem;
   }
 }
 @media screen and (min-width: 1148px) {

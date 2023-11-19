@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700&display=swap');
 
 *{
   margin: 0;
@@ -59,8 +60,8 @@ root{
         ul{
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            gap: 1.5rem;
+            justify-content: end ;
+            gap: 0.5rem;
             color: var(--whiteColor);
         }
     }
@@ -90,14 +91,14 @@ ul{
   
   li {
     
-    font-size: var(--h3FontSize);
+    font-size: var(--h2FontSize);
     font-weight: 500;
     padding: 1rem 0;
     text-align: center;
     cursor: pointer;
     &:hover {
-      color: var(--primaryColor);
-      border-bottom: 1.5px solid var(--primaryColorLight);
+      color: var(--whiteColor);
+      border-bottom: 1.5px solid var(--whiteColor);
     }
   }
 }
@@ -108,7 +109,7 @@ ul{
   .closeIcon {
     font-size: var(--h1FontSize);
     &:hover {
-      color: var(--primaryColor);
+      color: var(--whiteColor);
     }
   }
 
@@ -151,14 +152,14 @@ ul{
 
         li {
           font-size: var(--h3FontSize);
-          font-weight: 500;
-          padding: 1rem 0;
+          font-weight: 400;
+          
           text-align: center;
           cursor: pointer;
 
           &:hover {
-            color: var(--primaryColor);
-            border-bottom: 1.5px solid var(--primaryColor);
+            color: var(--whiteColor);
+            border-bottom: 1.5px solid var(--whiteColor);
           }
         }
       }
