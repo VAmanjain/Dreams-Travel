@@ -1,5 +1,5 @@
 import React from "react";
-import "./protfolio.css";
+
 
 import icon1 from "../../Assest/protection.png";
 import icon2 from "../../Assest/distance.png";
