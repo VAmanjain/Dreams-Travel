@@ -1,4 +1,5 @@
 import React from "react";
+import './sub.css'
 
 import Image from "../../Assest/ladycalling-rb.png";
 
