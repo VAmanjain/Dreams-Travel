@@ -31,7 +31,7 @@ root {
 }
 
 .book {
-  background-color: var(--whiteColor);
+  background: linear-gradient(45deg, #bee9e8, #62b6cb, #cae9ff, #5fa8d3);
   width: 100%;
   height: 130vh;
   top: 0;
@@ -71,7 +71,7 @@ root {
   padding: 2rem;
   border-radius: 10px;
   color: var(--whiteColor);
-  background-color: hsl(214, 97%, 27%) !important;
+  background-color: hsla(214, 97%, 27%, 0.694) !important;
 }
 
 .travel {
@@ -152,7 +152,7 @@ root {
 }
 
 .trip {
-  background-color: var(--whiteColor);
+  background: linear-gradient(45deg, #bee9e8, #62b6cb, #cae9ff, #5fa8d3);
   width: 100%;
   height: 180vh;
 }
@@ -180,14 +180,14 @@ root {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 5%);
-  background-color: hsl(214, 97%, 27%);
+  background-color: hsla(214, 97%, 27%, 0.694);
   color: var(--whiteColor);
   border-radius: 20px;
   box-shadow: 0px 2px 3px 4px rgba(236, 213, 213, 0.516);
   padding: 2rem;
   border-radius: 10px;
   color: var(--whiteColor);
-  background-color: hsl(214, 97%, 27%) !important;
+  background-color: hsla(214, 97%, 27%, 0.694) !important;
 }
 
 @media screen and (max-width: 480px) {

@@ -25,8 +25,18 @@
   --borderRadius: 3rem;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: var(--primaryColor);
+}
+
+::selection {
+  color: white;
+  background: var(--primaryColor);
+}
+
 .footer {
-  background-color: var(--primarycolorLght);
+  background-color: var(--primaryColor);
   padding: 2rem 0;
   color: var(--whiteColor);
 }
@@ -34,26 +44,59 @@
   gap: 1.5rem;
   text-align: center;
   align-items: flex-start;
+}
+.footer .secContaine .logoDiv {
+  padding-left: 2rem;
+}
+.footer .secContaine .logoDiv .footerLogo {
+  display: flex;
+  color: var(--whiteColor);
+  font-weight: 500;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+}
+.footer .secContaine .logoDiv .footerLogo .icon {
+  font-size: 25px;
+  color: var(--blackColor);
+}
+.footer .secContaine .socials {
+  gap: 0.5rem;
+  margin: auto;
   justify-content: center;
 }
-.footer .logoDiv {
-  padding-left: 1rem;
+.footer .secContaine .socials .icon {
+  font-size: 25px;
+  color: var(--whiteColor);
+  background-color: var(--primaryColor);
+  border-radius: 50%;
+  padding: 8px;
 }
-.footer .logoDiv .social {
-  display: flex;
+.footer .secContaine .socials .icon:hover {
+  color: var(--primaryColorLight);
 }
-.footer .logoDiv .social .icon {
-  margin-top: 0.5rem;
-  margin-left: 1rem;
-}
-.footer .footerLinks {
+.footer .secContaine .footerLinks {
   display: grid;
   row-gap: 0.2rem;
 }
-.footer .footerLinks .linkTitle {
+.footer .secContaine .footerLinks .linkTitle {
   padding-bottom: 0.5rem;
   color: var(--whiteColor);
   font-weight: 700;
+}
+
+link:hover {
+  transform: translate(10px);
+}
+link:hover a {
+  color: var(--primarycolorLght);
+}
+
+a, .phone, .email {
+  color: var(--whiteColor);
+  font-size: 13px;
+  font-weight: 500;
 }
 
 @media screen and (min-width: 490px) {

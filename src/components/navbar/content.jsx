@@ -1,11 +1,10 @@
 import Destinations from "../Destinations/destinations";
 import Questions from "../Questions/Questions";
+import About from "../AboutUs/about";
+import Footer from "../Footer/footer";
 import Maint from "../home/Maint";
 import Travel from "../DreamDestination/travel";
 import Count from "../Count/Count";
-import Protfolio from "../Profolio/protfolio";
-
-import Subscribe from "../Subscribe/subscribe";
 
 const Content = () => {
   return (
@@ -15,9 +14,8 @@ const Content = () => {
       <Destinations />
      <Travel/>
       <Questions />
-      <Protfolio/>
-      <Subscribe/>
-     
+      <About />
+      <Footer />
     </div>
   );
 };

@@ -108,7 +108,7 @@ textarea {
   color: var(--primaryColor);
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 40px) {
   .questions .Heading {
     font-size: var(--h1FontSize);
     text-align: center;

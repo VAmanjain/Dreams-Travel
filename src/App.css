@@ -15,13 +15,13 @@
   --greyColor: hsl(0, 0%, 51%);
   --inputColor: hsl(330, 12%, 97%);
   --cardColor: hsl(300, 1%, 94%);
-  --biggestFontSize: 3.5rem;
-  --h1FontSize: 2.6rem;
-  --h2FontSize: 2.25rem;
-  --h3FontSize: 2rem;
-  --normalFontSize: 1.938rem;
-  --smallFontSize: 1.813rem;
-  --smallestFontSize: 1.75rem;
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.6rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
   --borderRadius: 3rem;
 }
 
@@ -33,6 +33,17 @@ body {
 .flex {
   display: flex;
   align-items: center;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: var(--primaryColor);
+}
+
+::selection {
+  color: white;
+  background: var(--primaryColor);
 }
 
 .grid {
@@ -52,10 +63,6 @@ html {
 a {
   text-decoration: none;
   color: var(--whiteColor) !important;
-}
-
-ul {
-  margin-bottom: 0% !important;
 }
 
 li {
@@ -110,8 +117,8 @@ video {
 }
 
 ::selection {
-  background: var(--primaryColor);
-  color: var(--whiteColor);
+  background: var(--primaryColorLight);
+  color: var(--primaryColor);
 }
 
 ::-webkit-scrollbar {

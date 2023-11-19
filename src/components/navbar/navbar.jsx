@@ -44,22 +44,22 @@ const Navbar = () => {
       <div className="logoDiv">
         <ConnectingAirportsIcon className="icon" />
 
-        {location === "test" || "contact" || "book" || "gallery" ? (
+        {location !== "test" ? (
           <span>
-                    <span onClick={() => goToPageAndScroll("home")}>Dreams-Travel</span>
-         
+            {" "}
+            <ScrollLink
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-75}
+              duration={500}
+              className=" text-[1.6rem] text-white "
+            >
+              Dreams Travel
+            </ScrollLink>
           </span>
         ) : (
-          <ScrollLink
-          to="home"
-          spy={true}
-          smooth={true}
-          offset={-75}
-          duration={500}
-          className=" text-[1.6rem] text-white "
-        >
-          Dreams Travel
-        </ScrollLink>
+          <span onClick={() => goToPageAndScroll("home")}>Drems-Travel</span>
         )}
       </div>
 
@@ -67,25 +67,23 @@ const Navbar = () => {
         <ul>
           {location === "test" || "contact" || "book" || "gallery" ? (
             <>
-              <li className="navList" onClick={() =>{removeNavBar(); goToPageAndScroll("home")}}>
+              <li className="navList" onClick={() => goToPageAndScroll("home")}>
                 Home
               </li>
               <li
                 className="navList"
-                onClick={() => {removeNavBar();goToPageAndScroll("destination")}}
+                onClick={() => goToPageAndScroll("destination")}
               >
                 Destinations
               </li>
               <li
                 className="navList"
-                onClick={() => {removeNavBar();goToPageAndScroll("about")}}
+                onClick={() => goToPageAndScroll("about")}
               >
                 About
               </li>
               <li className="navList">
-                <RouterLink to="/contact" className="text-white"
-                onClick={()=>{removeNavBar()}}
-                >
+                <RouterLink to="/contact" className="text-white">
                   contact
                 </RouterLink>
               </li>

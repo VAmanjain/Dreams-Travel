@@ -150,15 +150,14 @@ const Gallery = () => {
       </div>
 
       {/* ------------------our trips---------------------------- */}
-      <div className="Our-trip  ">
-        <h1 className="text-center head">Our Trips</h1>
-     <div className="plans grid">
-
+      <div className="head mt-[5rem] ">
+        <h1 className="text-center">Our Trips</h1>
+        <hr />
         {/* -----------------------First trips---------------- */}
-        <div className=" card ">
+        <div className="text-black-900">
           <h2>Glimpse of {selectedDestination.location}</h2>
           <h4>Duration: {selectedDestination.duration1}</h4>
-          <span className="">
+          <span className="my-[1rem]">
             time period : <i> {selectedDestination.period1}</i>
           </span>
 
@@ -178,7 +177,7 @@ const Gallery = () => {
         </div>
         <hr />
         {/* -------------------------second Trip-------------------- */}
-        <div className="card">
+        <div className="text-black-900">
           <h2> New year vacation in {selectedDestination.location}</h2>
           <h4>Duration: {selectedDestination.duration2}</h4>
           <span className="my-[1rem]">
@@ -201,7 +200,7 @@ const Gallery = () => {
         </div>
         <hr />
         {/* ----------------------third trip------------------------ */}
-        <div className="card">
+        <div className="text-black-900">
           <h2> {selectedDestination.location} in January</h2>
           <h4>Duration: {selectedDestination.duration3}</h4>
           <span className="my-[1rem]">
@@ -222,8 +221,6 @@ const Gallery = () => {
             </RouterLink>
           </div>
         </div>
-     </div>
-
       </div>
     </div>
   );
