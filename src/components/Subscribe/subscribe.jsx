@@ -1,5 +1,5 @@
 import React from "react";
-import "./subscribe.css";
+import "./sub.css";
 import Image from "../../Assest/ladycalling-rb.png";
 
 const Subscribe = () => {
