@@ -67,6 +67,7 @@ root {
   font-weight: 600;
   color: var(--primaryColor);
   text-align: center;
+  margin: auto;
   margin-bottom: 2rem;
 }
 .about .offer .feature {
@@ -174,6 +175,7 @@ root {
 @media screen and (max-width: 580px) {
   .about .section h1 {
     font-size: 2rem;
+    text-align: center;
   }
   .about .section .grid {
     justify-content: space-evenly;

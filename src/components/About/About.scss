@@ -73,7 +73,9 @@ root {
       font-weight: 600;
       color: var(--primaryColor);
       text-align: center;
+      margin: auto;
       margin-bottom: 2rem;
+
     }
     .feature {
       display: grid;
@@ -195,6 +197,7 @@ root {
     .section {
       h1 {
         font-size: 2rem;
+        text-align: center;
       }
       .grid {
         justify-content: space-evenly;

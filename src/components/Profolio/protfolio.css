@@ -43,11 +43,12 @@ root {
   align-items: flex-start;
 }
 .portifolio .secContainer .leftContent .grid .singlePortifolio .iconDiv {
-  height: 50px;
-  width: 50px;
+  height: auto;
+  width: 95px;
 }
 .portifolio .secContainer .leftContent .grid .singlePortifolio .infor h4 {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.2rem;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 480px) {

@@ -33,12 +33,11 @@
   width: 100%;
   .hero{
     h1{
-      font-size: var(--biggestFontSize) !important;
+      font-size: var(--biggestFontSize) ;
       color: var(--primaryColor);
     }
     .redText{
       margin-top: 1rem;
-
     }
     
   }
@@ -48,11 +47,11 @@
       display: grid;
       gap: 2rem;
       .secTitle{
-
+font-size: var(--h2FontSize);
         .redText {
           color: var(--primaryColor);
-          font: var(--smallFontSize);
-          font-weight: 500;
+          font: var(--normalFontSize) !important;
+        
         }
        
       }
@@ -233,6 +232,7 @@ padding: 1.2rem;
 border-radius: 40px;
 }
   }
+
 
   
 .Our-trip{

@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-root {
+:root {
   --primaryColor: #023e8a;
   --primarycolorLght: #0077b6;
   --bgColor: hsl(0, 0%, 100%);
@@ -15,13 +15,14 @@ root {
   --greyColor: hsl(0, 0%, 51%);
   --inputColor: hsl(330, 12%, 97%);
   --cardColor: hsl(300, 1%, 94%);
-  --biggestFontSize: 2.5rem;
-  --h1FontSize: 1.6rem;
-  --h2FontSize: 1.25rem;
-  --h3FontSize: 1rem;
-  --normalFontSize: 0.938rem;
-  --smallFontSize: 0.813rem;
-  --smallestFontSize: 0.75rem;
+  --headFontSize:4rem;
+  --biggestFontSize: 3.5rem;
+  --h1FontSize: 2.6rem;
+  --h2FontSize: 2.25rem;
+  --h3FontSize: 2rem;
+  --normalFontSize: 1.938rem;
+  --smallFontSize: 1.813rem;
+  --smallestFontSize: 1.75rem;
   --borderRadius: 3rem;
 }
 
@@ -36,11 +37,15 @@ textarea {
 }
 .questions .Heading {
   padding-bottom: 5rem;
-  font-size: var(--biggestFontSize);
   color: var(--primaryColor);
   display: flex;
   justify-content: center;
   font-weight: 700;
+}
+.questions .Heading h3 {
+  font-size: var(--h1FontSize);
+  font-weight: 700;
+  text-align: center;
 }
 .questions .accordion {
   width: 100%;
@@ -110,8 +115,10 @@ textarea {
 
 @media screen and (min-width: 400px) {
   .questions .Heading {
-    font-size: var(--h1FontSize);
     text-align: center;
+  }
+  .questions .Heading h3 {
+    font-size: var(--h1FontSize);
   }
   .questions .accordion {
     align-items: center;
@@ -120,9 +127,6 @@ textarea {
   }
 }
 @media screen and (min-width: 520px) {
-  .questions .Heading {
-    font-size: var(--h1FontSize);
-  }
   .questions .secContainer .accordion {
     margin: auto;
     font-size: var(--h2FontSize);
@@ -140,6 +144,9 @@ textarea {
   }
 }
 @media screen and (min-width: 640px) {
+  .questions .Heading h3 {
+    font-size: var(--biggestFontSize);
+  }
   .questions .secContainer {
     grid-template-columns: repeat(2, 1fr);
   }

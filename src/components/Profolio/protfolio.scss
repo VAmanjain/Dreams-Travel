@@ -49,13 +49,15 @@ root{
           align-items: flex-start;
 
           .iconDiv {
-            height: 50px;
-            width: 50px;
+            height: auto;
+            width:95px;
           }
 
           .infor {
             h4 {
-              padding-bottom: 0.5rem;
+              padding-bottom: 0.2rem;
+              font-weight: 600;
+              
             }
           }
         }
