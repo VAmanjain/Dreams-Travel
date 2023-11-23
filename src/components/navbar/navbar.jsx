@@ -76,11 +76,12 @@ const Navbar = () => {
               >
                 Destinations
               </li>
-              <li
-                className="navList"
-                onClick={() => {removeNavBar();goToPageAndScroll("about")}}
-              >
-                About
+              <li className="navList">
+                <RouterLink to="/about" className="text-white"
+                onClick={()=>{removeNavBar()}}
+                >
+                  About
+                </RouterLink>
               </li>
               <li className="navList">
                 <RouterLink to="/contact" className="text-white"
