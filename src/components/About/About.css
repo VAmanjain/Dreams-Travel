@@ -30,6 +30,8 @@ root {
   min-height: 100vh;
   height: auto;
   padding-top: 3rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 .about .section h1 {
   font-size: 4.5rem;
@@ -60,7 +62,80 @@ root {
   width: 550px;
   border-radius: 20px;
 }
+.about .offer h2 {
+  font-size: var(--biggestFontSize);
+  font-weight: 600;
+  color: var(--primaryColor);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.about .offer .feature {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-evenly;
+  gap: 2.2rem;
+}
+.about .offer .feature .box {
+  min-height: 320px;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 16px;
+  width: 250px;
+  box-shadow: 0px 0px 2px rgb(2, 2, 2);
+}
+.about .offer .feature .box img {
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.about .offer .feature .box .title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: var(--blackColor);
+  font-size: var(--h3FontSize);
+  text-align: center;
+  margin-bottom: 2rem;
+  margin: auto;
+  font-weight: 600;
+}
+.about .offer .feature .box .desc {
+  margin-top: 1.2rem;
+  text-align: center;
+}
 
+@media screen and (min-width: 1440px) {
+  .offer .feature {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-evenly;
+    gap: 2.2rem;
+  }
+  .offer .feature .box {
+    padding: 1rem;
+    border-radius: 16px;
+    width: 250px;
+    box-shadow: 0px 0px 2px rgb(2, 2, 2);
+  }
+  .offer .feature .box img {
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  .offer .feature .box .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--blackColor);
+    font-size: var(--h3FontSize);
+    text-align: center;
+    margin-bottom: 2rem;
+    margin: auto;
+    font-weight: 600;
+  }
+  .offer .feature .box .desc {
+    margin-top: 1.2rem;
+    text-align: center;
+  }
+}
 @media screen and (max-width: 780px) {
   .about .section h1 {
     font-size: 4rem;
@@ -88,6 +163,12 @@ root {
     border-radius: 10px;
     -webkit-backdrop-filter: blur(4px);
             backdrop-filter: blur(4px);
+  }
+  .about .offer .feature {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about .offer .feature .box {
+    width: 320px;
   }
 }
 @media screen and (max-width: 580px) {
@@ -119,5 +200,11 @@ root {
     border-radius: 10px;
     -webkit-backdrop-filter: blur(4px);
             backdrop-filter: blur(4px);
+  }
+  .about .offer .feature {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about .offer .feature .box {
+    width: 250px;
   }
 }/*# sourceMappingURL=About.css.map */
