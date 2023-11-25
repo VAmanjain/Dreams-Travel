@@ -11,6 +11,8 @@ import Loader from "./Loader/Loader";
 import { useEffect, useState } from "react";
 import Footer from "./components/Footer/footer";
 import About from './components/About/about';
+import Terms from './components/Other/terms';
+
 
 
 
@@ -41,6 +43,7 @@ useEffect(() => {
           <Route path="/book" element={<Book />} />
           <Route path="/trip" element={<Trip/>} />
           <Route path="/about" element={<About/>}/>
+          <Route path="/term" element={<Terms/>}/>
         </Routes>
         <Footer />
       </Router>  )}

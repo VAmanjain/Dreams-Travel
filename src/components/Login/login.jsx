@@ -56,16 +56,12 @@ function App() {
   }, []);
 
   return (
-    <div className=' for '>
+    <div className=' for z'>
 
 <div className="imgBg">
   <img src={Image} alt="background" />
   </div>     
-<div data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom"
-    data-aos-offset="200"
-    data-aos-delay="50"
-    data-aos-duration="1000" className=' md:pt-[2.5rem]'>
+<div  className=' md:pt-[2.5rem]'>
 
     <MDBContainer className="p-3 my-5  d-flex flex-column  form-box"  >
 

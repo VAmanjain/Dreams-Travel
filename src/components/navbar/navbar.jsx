@@ -22,9 +22,13 @@ const Navbar = () => {
     await scroller.scrollTo(selector, {
       duration: 400,
       smooth: true,
-    
+
       spy: true,
     });
+  };
+
+  const signUpClick = () => {
+    document.getElementById("signUp")
   };
 
   // state to track and update navbar
@@ -46,20 +50,19 @@ const Navbar = () => {
 
         {location === "test" || "contact" || "book" || "gallery" ? (
           <span>
-                    <span onClick={() => goToPageAndScroll("home")}>Dreams-Travel</span>
-         
+            <span onClick={() => goToPageAndScroll("home")}>Dreams-Travel</span>
           </span>
         ) : (
           <ScrollLink
-          to="home"
-          spy={true}
-          smooth={true}
-          offset={-75}
-          duration={500}
-          className=" text-[1.6rem] text-white "
-        >
-          Dreams Travel
-        </ScrollLink>
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-75}
+            duration={500}
+            className=" text-[1.6rem] text-white "
+          >
+            Dreams Travel
+          </ScrollLink>
         )}
       </div>
 
@@ -67,25 +70,42 @@ const Navbar = () => {
         <ul>
           {location === "test" || "contact" || "book" || "gallery" ? (
             <>
-              <li className="navList" onClick={() =>{removeNavBar(); goToPageAndScroll("home")}}>
+              <li
+                className="navList"
+                onClick={() => {
+                  removeNavBar();
+                  goToPageAndScroll("home");
+                }}
+              >
                 Home
               </li>
               <li
                 className="navList"
-                onClick={() => {removeNavBar();goToPageAndScroll("destination")}}
+                onClick={() => {
+                  removeNavBar();
+                  goToPageAndScroll("destination");
+                }}
               >
                 Destinations
               </li>
               <li className="navList">
-                <RouterLink to="/about" className="text-white"
-                onClick={()=>{removeNavBar()}}
+                <RouterLink
+                  to="/about"
+                  className="text-white"
+                  onClick={() => {
+                    removeNavBar();
+                  }}
                 >
                   About
                 </RouterLink>
               </li>
               <li className="navList">
-                <RouterLink to="/contact" className="text-white"
-                onClick={()=>{removeNavBar()}}
+                <RouterLink
+                  to="/contact"
+                  className="text-white"
+                  onClick={() => {
+                    removeNavBar();
+                  }}
                 >
                   contact
                 </RouterLink>
@@ -140,7 +160,12 @@ const Navbar = () => {
         <CloseIcon className="icon closeIcon" onClick={removeNavBar} />
       </div>
       <button className="signUpBtn btn">
-        <RouterLink to="/test" className="text-white">
+        <RouterLink
+          to="/test"
+          className="text-white"
+          id="signUp"
+          onClick={signUpClick()}
+        >
           SignUP
         </RouterLink>
       </button>

@@ -1,5 +1,12 @@
 import React from "react";
 import "./footer.css";
+
+import {
+  NavLink as RouterLink,
+  useLocation,
+  useNavigate,
+} from "react-router-dom";
+
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -50,7 +57,14 @@ const Footer = () => {
             <a href="#">Support</a>
           </li>
           <li>
-            <a href="#">Travel & Condition</a>
+            
+            <RouterLink
+              to="/term"
+              className="text-white"
+            
+            >
+              Terms & Condition
+            </RouterLink>
           </li>
           <li>
             <a href="#">Privacy</a>
