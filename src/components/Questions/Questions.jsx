@@ -4,9 +4,9 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
-import { red } from "@mui/material/colors";
 
 export default function Questions() {
+  
   function review() {
     alert("Our team answer questions in 24hours.!! ");
   }
@@ -120,12 +120,12 @@ export default function Questions() {
           </div>
           <form action="">
             <div className="formContent grid">
-              <input type="email" placeholder="Enter email address" />
+              <input type="email" placeholder="Enter email address" required />
               <textarea
                 placeholder="Enter your question here"
-                className="px-3"
+                className="px-3" required
               ></textarea>
-              <button className="btn" onClick={() => review()}>
+              <button className="btn"  onClick={() => review()}>
                 Submit Inquiery
               </button>
             </div>
