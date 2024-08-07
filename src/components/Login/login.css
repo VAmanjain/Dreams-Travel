@@ -6,7 +6,7 @@
 }
 
 root {
-  --primaryColor: rgb(2, 60, 136);
+  --primaryColor: hsl(214, 97%, 27%);
   --primarycolorLght: hsl(201, 100%, 36%);
   --bgColor: hsl(0, 0%, 100%);
   --formColor: hsl(216, 42%, 87%);

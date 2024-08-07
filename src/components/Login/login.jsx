@@ -1,30 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import * as Scroll from "react-scroll";
-import Image from '../../Assest/form.jpg'
-import {
-
-  useLocation,
-  useNavigate,
-} from "react-router-dom";
-import {
-  MDBContainer,
-  MDBTabs,
-  MDBTabsItem,
-  MDBTabsLink,
-  MDBTabsContent,
-  MDBTabsPane,
-  MDBBtn,
-
-  MDBInput,
-  MDBCheckbox
-}
-from 'mdb-react-ui-kit';
-import './login.css'
-import {BsFacebook} from 'react-icons/bs'
-import {BsGoogle} from 'react-icons/bs'
-import {BsTwitter} from 'react-icons/bs'
-import {BsGithub} from 'react-icons/bs'
-
+import { useLocation, useNavigate } from "react-router-dom";
 
 function App() {
   const path = useLocation().pathname;
@@ -41,7 +17,7 @@ function App() {
       spy: true,
     });
   };
-  const [justifyActive, setJustifyActive] = useState('tab1');;
+  const [justifyActive, setJustifyActive] = useState("tab1");
 
   const handleJustifyClick = (value) => {
     if (value === justifyActive) {
@@ -53,115 +29,77 @@ function App() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  }, []);
 
   return (
-    <div className=' for z'>
-
-<div className="imgBg">
-  <img src={Image} alt="background" />
-  </div>     
-<div  className=' md:pt-[2.5rem]'>
-
-    <MDBContainer className="p-3 my-5  d-flex flex-column  form-box"  >
-
-      <MDBTabs pills justify className='mb-3 d-flex flex-row justify-content-between'>
-        <MDBTabsItem>
-          <MDBTabsLink onClick={() => handleJustifyClick('tab1')} active={justifyActive === 'tab1'} className='toggle'>
-            Login
-          </MDBTabsLink>
-        </MDBTabsItem>
-        <MDBTabsItem>
-          <MDBTabsLink onClick={() => handleJustifyClick('tab2')} active={justifyActive === 'tab2'} className='toggle'>
-           signup
-          </MDBTabsLink>
-        </MDBTabsItem>
-      </MDBTabs>
-
-      <MDBTabsContent>
-
-        <MDBTabsPane show={justifyActive === 'tab1'}>
-
-          <div className="text-center mb-3">
-            <p>log in  with:</p>
-
-            <div className='d-flex justify-content-between mx-auto' style={{width: '40%'}}>
-              <MDBBtn tag='a' color='none' className='m-1' style={{ color: 'black' }}>
-             < BsFacebook className='icon'/>
-              </MDBBtn>
-
-              <MDBBtn tag='a' color='none' className='m-1' style={{ color: 'black' }}>
-              <BsGoogle className='icon'/>
-              </MDBBtn>
-
-              <MDBBtn tag='a' color='none' className='m-1' style={{ color: 'black' }}>
-                <BsTwitter className='icon'/>
-              </MDBBtn>
-
-              <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
-                <BsGithub className='icon'/>
-              </MDBBtn>
-            </div>
-            <p className="text-center mt-3">or:</p>
-          </div>
-
-          <MDBInput wrapperClass='mb-4' label='Email address' id='form1' type='email' contrast   className='word' required/>
-          <MDBInput wrapperClass='mb-4' label='Password' id='form2' type='password' contrast  className='Light' required />
-
-          <div className="d-flex justify-content-between mx-4 mb-4">
-            <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='Remember me'  />
-            <a href="!#" className='text-white' >Forgot password?</a>
-          </div>
-          <MDBBtn className="mb-4  text-center log-btn "  onClick={() => goToPageAndScroll("home")}>log in</MDBBtn>
-          <p className="text-center">Not a member? <a href="#" className='text-white' onClick={() => handleJustifyClick('tab1')} active={justifyActive === 'tab1'}  >Signup</a></p>
-
-        </MDBTabsPane>
-
-        <MDBTabsPane show={justifyActive === 'tab2'}>
-
-          <div className="text-center mb-3">
-            <p>Sign up with:</p>
-
-            <div className='d-flex justify-content-between mx-auto' style={{width: '40%'}}>
-              <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
-              < BsFacebook className='icon'/>
-              </MDBBtn>
-
-              <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
-              <BsGoogle className='icon'/>
-              </MDBBtn>
-
-              <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
-                <BsTwitter className='icon'/>
-              </MDBBtn>
-
-              <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
-                <BsGithub className='icon'/>
-              </MDBBtn>
-            </div>
-
-            <p className="text-center mt-3">or:</p>
-          </div>
-
-          <MDBInput wrapperClass='mb-4' label='Name' id='form1' contrast  type='text' required />
-          <MDBInput wrapperClass='mb-4' label='Username' id='form1'contrast  type='text' required />
-          <MDBInput wrapperClass='mb-4' label='Email' id='form1' contrast  type='email' required />
-          <MDBInput wrapperClass='mb-4' label='Password' id='form1' contrast  type='password' required />
-
-          <div className='d-flex justify-content-center mb-4'>
-            <MDBCheckbox name='flexCheck' id='flexCheckDefault' label='I have read and agree to the terms' />
-          </div>
-
-          <MDBBtn className="mb-4 log-btn"  onClick={() => goToPageAndScroll("home")}>signup</MDBBtn>
-
-        </MDBTabsPane>
-
-      </MDBTabsContent>
-
-    </MDBContainer>
-</div>
+    <div className="flex min-h-screen  flex-1 flex-col justify-center px-6 py-24 lg:px-8  ">
+      <div className="sm:mx-auto sm:w-auto sm:max-w-auto">
+        <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
+          Sign in to your account
+        </h2>
       </div>
-   
+
+      <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+        <form action="#" method="POST" className="space-y-6">
+          <div>
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium leading-6 text-gray-900"
+            >
+              Email address
+            </label>
+            <div className="mt-2">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                autoComplete="email"
+                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 px-2"
+              />
+            </div>
+          </div>
+
+          <div>
+            <div className="flex items-center justify-between">
+              <label
+                htmlFor="password"
+                className="block text-sm font-medium leading-6 text-gray-900"
+              >
+                Password
+              </label>
+              <div className="text-sm">
+                <a
+                  href="#"
+                  className="font-semibold text-indigo-600 hover:text-indigo-500"
+                >
+                  Forgot password?
+                </a>
+              </div>
+            </div>
+            <div className="mt-2">
+              <input
+                id="password"
+                name="password"
+                type="password"
+                required
+                autoComplete="current-password"
+                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 px-2"
+              />
+            </div>
+          </div>
+
+          <div>
+            <button
+              type="submit"
+              className="flex w-full justify-center rounded-md bg-[#023c88] px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[#0077b8] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0077b8"
+            >
+              Sign in
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
   );
 }
 
